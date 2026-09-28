@@ -1,0 +1,1437 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Digital Anjali | Digital Marketing & SEO</title>
+
+    <meta name="description"
+        content="Learn more about Digital Anjali, a digital marketing and SEO-focused platform covering SEO, content marketing, website optimization, web technologies and digital projects.">
+
+    <meta name="keywords"
+        content="About Digital Anjali, Digital Anjali, digital marketing, SEO, SEO professional, digital marketing projects, content marketing, website optimization">
+
+    <meta name="author" content="Digital Anjali">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Replace with your actual website URL -->
+    <link rel="canonical" href="https://yourdomain.com/about.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="About Digital Anjali | Digital Marketing & SEO">
+
+    <meta property="og:description"
+        content="Discover the story, skills, interests and digital marketing journey behind Digital Anjali.">
+
+    <meta property="og:type" content="profile">
+
+    <meta property="og:url"
+        content="https://yourdomain.com/about.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Digital Anjali",
+        "url": "https://yourdomain.com/",
+        "jobTitle": "Digital Marketing & SEO Professional",
+        "description": "Digital marketing and SEO professional interested in SEO, content marketing, website optimization and web technologies.",
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://www.linkedin.com/in/yourusername"
+        ]
+    }
+    </script>
+
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #1f2937;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+
+            background:
+                linear-gradient(90deg, #7c3aed, #ec4899, #f97316);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #374151;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #7c3aed;
+        }
+
+
+        /* =========================
+           PAGE HERO
+        ========================= */
+
+        .page-hero {
+            padding: 110px 20px;
+
+            text-align: center;
+
+            background:
+                radial-gradient(circle at 10% 20%, #fbcfe8 0%, transparent 30%),
+                radial-gradient(circle at 90% 10%, #ddd6fe 0%, transparent 30%),
+                linear-gradient(135deg, #fff7ed, #f5f3ff, #fdf2f8);
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            background: white;
+
+            color: #7c3aed;
+
+            font-weight: 600;
+
+            box-shadow:
+                0 5px 20px rgba(124, 58, 237, 0.15);
+
+            margin-bottom: 20px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(40px, 6vw, 65px);
+
+            line-height: 1.2;
+
+            color: #111827;
+
+            margin-bottom: 20px;
+        }
+
+        .gradient-text {
+            background:
+                linear-gradient(90deg, #7c3aed, #ec4899, #f97316);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-hero p {
+            max-width: 750px;
+
+            margin: auto;
+
+            color: #4b5563;
+
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: #ec4899;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+
+            color: #111827;
+
+            margin-top: 8px;
+        }
+
+        .section-heading p {
+            max-width: 700px;
+
+            margin: 10px auto;
+
+            color: #6b7280;
+        }
+
+
+        /* =========================
+           ABOUT INTRO
+        ========================= */
+
+        .about-intro {
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .about-intro p {
+            color: #4b5563;
+
+            margin-bottom: 18px;
+        }
+
+        .highlight {
+            color: #7c3aed;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           ABOUT CARDS
+        ========================= */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .about-card {
+            padding: 32px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            border: 1px solid #f1f5f9;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.06);
+
+            transition: 0.3s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 18px 40px rgba(0, 0, 0, 0.10);
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 16px;
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+        }
+
+        .purple {
+            background: #ede9fe;
+            color: #7c3aed;
+        }
+
+        .pink {
+            background: #fce7f3;
+            color: #db2777;
+        }
+
+        .orange {
+            background: #ffedd5;
+            color: #ea580c;
+        }
+
+        .blue {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+
+        .green {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
+        .about-card h3 {
+            font-size: 21px;
+
+            margin-bottom: 10px;
+        }
+
+        .about-card p {
+            color: #6b7280;
+
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           LEARNING JOURNEY
+        ========================= */
+
+        .journey {
+            background: #f8fafc;
+        }
+
+        .journey-box {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .journey-item {
+            position: relative;
+
+            padding:
+                25px 25px 25px 70px;
+
+            background: white;
+
+            margin-bottom: 20px;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .journey-number {
+            position: absolute;
+
+            left: 20px;
+            top: 25px;
+
+            width: 35px;
+            height: 35px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(135deg, #7c3aed, #ec4899);
+
+            color: white;
+
+            font-weight: 700;
+        }
+
+        .journey-item h3 {
+            margin-bottom: 7px;
+        }
+
+        .journey-item p {
+            color: #6b7280;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skill-section {
+            background:
+                linear-gradient(135deg, #faf5ff, #fff1f2);
+        }
+
+        .skill-list {
+            max-width: 900px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+        .skill {
+            background: white;
+
+            padding: 20px 25px;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-title {
+            display: flex;
+
+            justify-content: space-between;
+
+            margin-bottom: 10px;
+
+            font-weight: 600;
+        }
+
+        .progress {
+            height: 8px;
+
+            background: #e5e7eb;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+        }
+
+        .progress span {
+            display: block;
+
+            height: 100%;
+
+            border-radius: 10px;
+
+            background:
+                linear-gradient(90deg, #7c3aed, #ec4899);
+        }
+
+
+        /* =========================
+           VALUES
+        ========================= */
+
+        .values {
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .value-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 30px;
+        }
+
+        .value-tag {
+            padding: 10px 18px;
+
+            border-radius: 30px;
+
+            background: #f3e8ff;
+
+            color: #7c3aed;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            padding: 80px 20px;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #7c3aed,
+                    #ec4899,
+                    #f97316
+                );
+        }
+
+        .cta h2 {
+            font-size: 40px;
+
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+
+            margin: auto;
+
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 13px 28px;
+
+            margin-top: 25px;
+
+            border-radius: 30px;
+
+            background: white;
+
+            color: #7c3aed;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* =========================
+           FAQ
+        ========================= */
+
+        .faq {
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        details {
+            background: #f8fafc;
+
+            padding: 20px 25px;
+
+            border-radius: 12px;
+
+            margin-bottom: 15px;
+
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: 600;
+
+            color: #111827;
+        }
+
+        details p {
+            color: #6b7280;
+
+            margin-top: 12px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111827;
+
+            color: #d1d5db;
+
+            text-align: center;
+
+            padding: 35px 0;
+        }
+
+        footer .logo {
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .about-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                flex-direction: column;
+
+                padding: 15px 0;
+
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-list {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding: 80px 20px;
+            }
+
+            .section-heading h2 {
+                font-size: 30px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                Digital Anjali
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="active">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             PAGE HERO
+        ========================== -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <div class="badge">
+                    ✨ Get to Know Me
+                </div>
+
+                <h1>
+                    About
+                    <span class="gradient-text">
+                        Digital Anjali
+                    </span>
+                </h1>
+
+                <p>
+                    Discover my digital marketing journey, interests,
+                    skills and passion for SEO, content and web technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>My Story</span>
+
+                    <h2>Who Is Digital Anjali?</h2>
+
+                </div>
+
+
+                <div class="about-intro">
+
+                    <p>
+                        <strong>Digital Anjali</strong> is a personal digital
+                        platform created to document my learning, projects,
+                        ideas and experiences in the world of digital marketing
+                        and web technology.
+                    </p>
+
+                    <p>
+                        My primary interests include
+                        <span class="highlight">Search Engine Optimization (SEO)</span>,
+                        keyword research, content marketing, website optimization
+                        and digital marketing.
+                    </p>
+
+                    <p>
+                        I believe that digital skills grow through continuous
+                        learning and practical experience. That is why this
+                        website brings together useful information, experiments,
+                        projects and resources related to the digital world.
+                    </p>
+
+                    <p>
+                        Digital Anjali is also a place where I can showcase
+                        my work, explore new ideas and continue developing
+                        my knowledge of modern digital technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT I FOCUS ON
+        ========================== -->
+
+        <section class="journey">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>My Focus</span>
+
+                    <h2>What I Love Exploring</h2>
+
+                    <p>
+                        Areas that form the foundation of Digital Anjali.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    <article class="about-card">
+
+                        <div class="icon purple">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                        <h3>Search Engine Optimization</h3>
+
+                        <p>
+                            Exploring on-page SEO, technical SEO,
+                            keyword research, internal linking and
+                            search-friendly website structures.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <div class="icon pink">
+
+                            <i class="fa-solid fa-pen-nib"></i>
+
+                        </div>
+
+                        <h3>Content Creation</h3>
+
+                        <p>
+                            Learning how useful, relevant and engaging
+                            content can help visitors while supporting
+                            website visibility.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <div class="icon orange">
+
+                            <i class="fa-solid fa-bullhorn"></i>
+
+                        </div>
+
+                        <h3>Digital Marketing</h3>
+
+                        <p>
+                            Exploring digital marketing concepts,
+                            online visibility, content promotion and
+                            audience-focused strategies.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <div class="icon blue">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <h3>Web Technologies</h3>
+
+                        <p>
+                            Exploring HTML, CSS, responsive design
+                            and the fundamentals of creating modern
+                            websites.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <div class="icon green">
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                        </div>
+
+                        <h3>Website Growth</h3>
+
+                        <p>
+                            Understanding how content, SEO, usability
+                            and website structure can contribute to
+                            a stronger online presence.
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <div class="icon orange">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                        </div>
+
+                        <h3>Continuous Learning</h3>
+
+                        <p>
+                            Staying curious, experimenting with new
+                            ideas and continuously improving digital
+                            knowledge and skills.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LEARNING JOURNEY
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>My Journey</span>
+
+                    <h2>Learning & Growing</h2>
+
+                    <p>
+                        A continuous journey of developing digital skills.
+                    </p>
+
+                </div>
+
+
+                <div class="journey-box">
+
+
+                    <div class="journey-item">
+
+                        <div class="journey-number">
+                            1
+                        </div>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            Exploring the fundamentals of digital marketing,
+                            SEO and how websites reach people through search engines.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-item">
+
+                        <div class="journey-number">
+                            2
+                        </div>
+
+                        <h3>Learn</h3>
+
+                        <p>
+                            Building knowledge around keyword research,
+                            content optimization, website structure and
+                            digital marketing concepts.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-item">
+
+                        <div class="journey-number">
+                            3
+                        </div>
+
+                        <h3>Practice</h3>
+
+                        <p>
+                            Applying concepts through practical projects,
+                            website experiments, content creation and
+                            SEO activities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="journey-item">
+
+                        <div class="journey-number">
+                            4
+                        </div>
+
+                        <h3>Improve</h3>
+
+                        <p>
+                            Reviewing results, learning from experience
+                            and continuously improving digital skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="skill-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>Skills</span>
+
+                    <h2>Areas I Am Developing</h2>
+
+                    <p>
+                        My current areas of learning and practical development.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-list">
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>SEO</span>
+
+                            <span>85%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:85%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>Keyword Research</span>
+
+                            <span>85%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:85%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>Content Marketing</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:80%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>Digital Marketing</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:80%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>HTML & CSS</span>
+
+                            <span>75%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:75%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-title">
+
+                            <span>Website Optimization</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <span style="width:80%"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VALUES
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>My Approach</span>
+
+                    <h2>What Matters to Me</h2>
+
+                </div>
+
+
+                <div class="values">
+
+                    <p>
+                        My approach to digital learning is based on curiosity,
+                        practical experience and continuous improvement.
+                        I believe useful digital work should focus on both
+                        people and technology.
+                    </p>
+
+
+                    <div class="value-tags">
+
+                        <span class="value-tag">
+                            🚀 Continuous Learning
+                        </span>
+
+                        <span class="value-tag">
+                            💡 Creativity
+                        </span>
+
+                        <span class="value-tag">
+                            🎯 User Focus
+                        </span>
+
+                        <span class="value-tag">
+                            📈 Growth
+                        </span>
+
+                        <span class="value-tag">
+                            🔍 Research
+                        </span>
+
+                        <span class="value-tag">
+                            💻 Technology
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Let's Explore the Digital World 🚀
+                </h2>
+
+                <p>
+                    Explore my projects, digital marketing interests and
+                    practical resources to learn more about SEO and the
+                    ever-changing digital world.
+                </p>
+
+                <a href="index.html#projects" class="btn">
+                    Explore My Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>FAQ</span>
+
+                    <h2>About Digital Anjali</h2>
+
+                </div>
+
+
+                <div class="faq">
+
+
+                    <details>
+
+                        <summary>
+                            What is Digital Anjali?
+                        </summary>
+
+                        <p>
+                            Digital Anjali is a personal digital platform
+                            focused on SEO, digital marketing, content,
+                            website optimization, web technologies and
+                            digital projects.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            What does Digital Anjali focus on?
+                        </summary>
+
+                        <p>
+                            The platform focuses on SEO, keyword research,
+                            content marketing, digital marketing, website
+                            optimization and web technologies.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Why was Digital Anjali created?
+                        </summary>
+
+                        <p>
+                            Digital Anjali was created as a platform to
+                            document digital learning, showcase projects
+                            and share useful information about digital
+                            marketing and web technologies.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can I see Digital Anjali's projects?
+                        </summary>
+
+                        <p>
+                            Yes. Visit the Projects section to explore
+                            SEO, digital marketing and web-related projects.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="logo">
+                Digital Anjali
+            </div>
+
+            <p>
+                Digital Marketing • SEO • Web Technologies
+            </p>
+
+            <p>
+                © 2026 Digital Anjali. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
