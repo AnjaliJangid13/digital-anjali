@@ -1,513 +1,1118 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 
-    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
     <title>Digital Anjali | Digital Marketing & SEO Professional</title>
 
-    <!-- Meta Description -->
-    <meta name="description" content="Welcome to Digital Anjali, a digital marketing and SEO-focused website sharing insights, projects, SEO strategies, web development resources, and digital marketing knowledge.">
+    <meta name="description"
+        content="Welcome to Digital Anjali – explore digital marketing, SEO, content marketing, website optimization, web projects and practical digital marketing insights.">
 
-    <!-- Keywords -->
-    <meta name="keywords" content="Digital Anjali, digital marketing, SEO, SEO professional, digital marketing services, SEO strategies, website optimization, content marketing, online marketing">
+    <meta name="keywords"
+        content="Digital Anjali, digital marketing, SEO, SEO professional, digital marketing projects, SEO strategies, content marketing, website optimization">
 
     <meta name="author" content="Digital Anjali">
-
-    <!-- Search Engine Instructions -->
     <meta name="robots" content="index, follow">
 
-    <!-- Canonical URL - replace with your actual domain -->
+    <!-- Replace with your actual website -->
     <link rel="canonical" href="https://yourdomain.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Digital Anjali | Digital Marketing & SEO Professional">
-    <meta property="og:description" content="Explore Digital Anjali for digital marketing insights, SEO strategies, projects, and web resources.">
+    <meta property="og:title"
+        content="Digital Anjali | Digital Marketing & SEO Professional">
+
+    <meta property="og:description"
+        content="Explore SEO, digital marketing, web projects and useful digital resources with Digital Anjali.">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com/">
-    <meta property="og:image" content="https://yourdomain.com/images/digital-anjali.jpg">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Digital Anjali | Digital Marketing & SEO Professional">
-    <meta name="twitter:description" content="Discover SEO, digital marketing, content marketing, and web development insights from Digital Anjali.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/digital-anjali.jpg">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Digital Anjali",
-      "url": "https://yourdomain.com/",
-      "jobTitle": "Digital Marketing & SEO Professional",
-      "description": "Digital marketing and SEO professional sharing knowledge, projects, strategies and web resources.",
-      "sameAs": [
-        "https://github.com/yourusername",
-        "https://www.linkedin.com/in/yourusername"
-      ]
-    }
-    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            color: #222;
+            font-family: 'Poppins', sans-serif;
+            color: #1f2937;
             background: #ffffff;
+            line-height: 1.7;
         }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
 
         header {
-            background: #111827;
-            color: white;
-            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
-        nav {
+        .navbar {
+            min-height: 75px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
         }
 
         .logo {
-            font-size: 25px;
-            font-weight: bold;
+            font-size: 27px;
+            font-weight: 800;
+            background: linear-gradient(90deg,#7c3aed,#ec4899,#f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        nav ul {
+        .nav-links {
             display: flex;
-            gap: 25px;
             list-style: none;
+            gap: 28px;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
+        .nav-links a {
+            color: #374151;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        .nav-links a:hover {
+            color: #7c3aed;
         }
+
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
-            padding: 90px 8%;
-            background: #f3f4f6;
-            text-align: center;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at 10% 20%, #fbcfe8 0%, transparent 30%),
+                radial-gradient(circle at 90% 10%, #ddd6fe 0%, transparent 30%),
+                linear-gradient(135deg,#fff7ed,#f5f3ff,#fdf2f8);
         }
 
-        .hero h1 {
-            font-size: 46px;
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 30px;
+            background: white;
+            color: #7c3aed;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(124,58,237,0.15);
             margin-bottom: 20px;
         }
 
-        .hero p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 19px;
+        .hero h1 {
+            font-size: clamp(38px,6vw,68px);
+            line-height: 1.15;
+            margin-bottom: 25px;
+            color: #111827;
         }
 
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #111827;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        .gradient-text {
+            background: linear-gradient(90deg,#7c3aed,#ec4899,#f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
+        .hero p {
+            max-width: 780px;
+            margin: auto;
+            color: #4b5563;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 27px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            color: white;
+            background: linear-gradient(90deg,#7c3aed,#ec4899);
+            box-shadow: 0 8px 25px rgba(124,58,237,0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(124,58,237,0.35);
+        }
+
+        .btn-outline {
+            color: #7c3aed;
+            border: 2px solid #7c3aed;
+            background: white;
+        }
+
+        .btn-outline:hover {
+            background: #7c3aed;
+            color: white;
+        }
+
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
 
         section {
-            padding: 65px 8%;
+            padding: 90px 0;
         }
 
-        section h2 {
+        .section-heading {
             text-align: center;
-            font-size: 32px;
-            margin-bottom: 25px;
+            margin-bottom: 50px;
         }
 
-        .intro {
+        .section-heading span {
+            color: #ec4899;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .section-heading h2 {
+            font-size: 38px;
+            margin-top: 8px;
+            color: #111827;
+        }
+
+        .section-heading p {
+            max-width: 700px;
+            margin: 12px auto 0;
+            color: #6b7280;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: #ffffff;
+        }
+
+        .about-content {
             max-width: 900px;
             margin: auto;
             text-align: center;
         }
 
+        .about-content p {
+            margin-bottom: 18px;
+            color: #4b5563;
+        }
+
+        .highlight {
+            color: #7c3aed;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            background: #f8fafc;
+        }
+
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 25px;
-            margin-top: 35px;
         }
 
         .card {
-            padding: 30px;
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
+            background: white;
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            transition: 0.35s;
+            border: 1px solid #f1f5f9;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .purple {
+            background: #ede9fe;
+            color: #7c3aed;
+        }
+
+        .pink {
+            background: #fce7f3;
+            color: #db2777;
+        }
+
+        .orange {
+            background: #ffedd5;
+            color: #ea580c;
+        }
+
+        .blue {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+
+        .green {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
+        .yellow {
+            background: #fef3c7;
+            color: #d97706;
         }
 
         .card h3 {
-            margin-bottom: 12px;
+            font-size: 21px;
+            margin-bottom: 10px;
         }
 
-        .projects {
-            background: #f3f4f6;
+        .card p {
+            color: #6b7280;
+            font-size: 15px;
         }
+
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .projects {
+            background:
+                linear-gradient(135deg,#faf5ff,#fff1f2);
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .project-top {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            color: white;
+        }
+
+        .project-1 {
+            background: linear-gradient(135deg,#7c3aed,#a855f7);
+        }
+
+        .project-2 {
+            background: linear-gradient(135deg,#ec4899,#f43f5e);
+        }
+
+        .project-3 {
+            background: linear-gradient(135deg,#f97316,#eab308);
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+            color: #6b7280;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .project-link {
+            color: #7c3aed;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            padding: 80px 20px;
+            background: linear-gradient(120deg,#7c3aed,#ec4899,#f97316);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.95;
+        }
+
+        .cta .btn {
+            margin-top: 25px;
+            background: white;
+            color: #7c3aed;
+        }
+
+
+        /* =========================
+           FAQ
+        ========================= */
 
         .faq {
             max-width: 900px;
             margin: auto;
         }
 
-        .faq-item {
-            margin-bottom: 25px;
+        details {
+            background: #f8fafc;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            border-radius: 12px;
+            cursor: pointer;
         }
 
-        .faq-item h3 {
-            margin-bottom: 8px;
+        summary {
+            font-weight: 600;
+            color: #111827;
         }
+
+        details p {
+            margin-top: 12px;
+            color: #6b7280;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: #f8fafc;
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: white;
+            color: #7c3aed;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: white;
+            background: #7c3aed;
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #111827;
-            color: white;
+            color: #d1d5db;
+            padding: 35px 0;
             text-align: center;
-            padding: 30px 8%;
         }
 
-        footer a {
-            color: white;
+        footer .logo {
+            margin-bottom: 10px;
         }
 
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:900px) {
+
+            .cards {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .nav-links {
                 gap: 15px;
             }
+        }
 
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
+        @media(max-width:650px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 12px;
             }
 
-            .hero h1 {
-                font-size: 34px;
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
             }
 
             .cards {
                 grid-template-columns: 1fr;
             }
+
+            .hero {
+                min-height: 580px;
+            }
+
+            .section-heading h2 {
+                font-size: 30px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
         }
+
     </style>
+
+
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Digital Anjali",
+        "url": "https://yourdomain.com/",
+        "jobTitle": "Digital Marketing & SEO Professional",
+        "description": "Digital marketing and SEO professional sharing knowledge, projects and digital marketing resources.",
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://www.linkedin.com/in/yourusername"
+        ]
+    }
+    </script>
+
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Digital Anjali?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Digital Anjali is a personal digital platform focused on digital marketing, SEO, web technologies, projects and digital learning resources."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What topics does Digital Anjali cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Digital Anjali covers SEO, keyword research, content marketing, website optimization, digital marketing and web technologies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SEO stands for Search Engine Optimization. It involves improving website content, structure and technical elements to help search engines understand and discover web pages."
+                }
+            }
+        ]
+    }
+    </script>
+
 </head>
+
 
 <body>
 
-    <!-- Header -->
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header>
-        <nav aria-label="Main Navigation">
 
-            <div class="logo">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
                 Digital Anjali
-            </div>
+            </a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+                <ul class="nav-links">
 
-        </nav>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
     </header>
 
 
     <main>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
 
-            <h1>Digital Anjali – Digital Marketing & SEO Professional</h1>
+        <!-- =========================
+             HERO
+        ========================== -->
 
-            <p>
-                Welcome to Digital Anjali, a platform focused on digital marketing,
-                search engine optimization, content marketing, website optimization,
-                and modern web technologies. Explore practical insights, projects,
-                strategies, and resources designed to improve your understanding
-                of the digital world.
-            </p>
+        <section class="hero" id="home">
 
-            <a href="#about" class="button">
-                Explore More
-            </a>
+            <div class="container">
 
-        </section>
+                <div class="hero-content">
 
+                    <div class="hero-badge">
+                        ✨ Welcome to Digital Anjali
+                    </div>
 
-        <!-- About Section -->
-        <section id="about">
+                    <h1>
+                        Learn.
+                        <span class="gradient-text">Create.</span>
+                        Grow.
+                    </h1>
 
-            <h2>About Digital Anjali</h2>
+                    <p>
+                        Welcome to Digital Anjali — a creative digital platform
+                        focused on <strong>Digital Marketing, SEO, Content Marketing,
+                        Website Optimization and Web Technologies.</strong>
+                        Explore practical knowledge, projects and useful digital resources.
+                    </p>
 
-            <div class="intro">
+                    <div class="hero-buttons">
 
-                <p>
-                    Digital Anjali is a personal digital platform created to share
-                    knowledge and practical experience in digital marketing,
-                    SEO, content creation, website optimization, and web technologies.
-                    The website brings together useful information for people who
-                    want to learn about online marketing and improve their digital
-                    presence.
-                </p>
+                        <a href="#projects" class="btn btn-primary">
+                            Explore Projects
+                        </a>
 
-                <br>
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Connect
+                        </a>
 
-                <p>
-                    From search engine optimization and keyword research to
-                    content marketing and website improvement, Digital Anjali
-                    focuses on practical approaches that can help websites become
-                    more visible and user-friendly. The platform also showcases
-                    digital projects, learning experiences, and useful resources.
-                </p>
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Skills Section -->
-        <section id="skills">
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-            <h2>Digital Marketing & SEO Skills</h2>
+        <section class="about" id="about">
 
-            <div class="cards">
+            <div class="container">
 
-                <article class="card">
-                    <h3>Search Engine Optimization</h3>
+                <div class="section-heading">
+
+                    <span>About Me</span>
+
+                    <h2>Welcome to Digital Anjali</h2>
+
                     <p>
-                        Learn about on-page SEO, off-page SEO, technical SEO,
-                        keyword research, internal linking, meta tags, and
-                        website optimization.
+                        A space for digital marketing, SEO and creative web projects.
                     </p>
-                </article>
+
+                </div>
 
 
-                <article class="card">
-                    <h3>Content Marketing</h3>
+                <div class="about-content">
+
                     <p>
-                        Discover content strategies, blog writing, keyword-focused
-                        content, content optimization, and techniques for creating
-                        useful information for online audiences.
+                        <strong>Digital Anjali</strong> is a personal digital platform
+                        focused on learning, creating and exploring the continuously
+                        evolving world of digital marketing and technology.
                     </p>
-                </article>
 
-
-                <article class="card">
-                    <h3>Digital Marketing</h3>
                     <p>
-                        Explore digital marketing concepts including online
-                        promotion, search marketing, social media, website
-                        visibility, and audience-focused strategies.
+                        Here you can explore practical information about
+                        <span class="highlight">Search Engine Optimization (SEO)</span>,
+                        keyword research, content marketing, website optimization,
+                        digital marketing strategies and web technologies.
                     </p>
-                </article>
 
-
-                <article class="card">
-                    <h3>Keyword Research</h3>
                     <p>
-                        Understand how relevant search terms can be researched,
-                        organized, and naturally used to create search-friendly
-                        website content.
+                        The goal is to make digital concepts easier to understand
+                        through simple explanations, practical projects and
+                        useful resources.
                     </p>
-                </article>
 
-
-                <article class="card">
-                    <h3>Website Optimization</h3>
-                    <p>
-                        Explore website structure, user experience, mobile
-                        responsiveness, page optimization, internal links,
-                        and basic technical SEO practices.
-                    </p>
-                </article>
-
-
-                <article class="card">
-                    <h3>Web Technologies</h3>
-                    <p>
-                        Explore HTML, CSS, basic web development concepts,
-                        website structure, and technologies used to build
-                        modern websites.
-                    </p>
-                </article>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Why Digital Marketing -->
-        <section>
+        <!-- =========================
+             SKILLS
+        ========================== -->
 
-            <h2>Why Digital Marketing Matters</h2>
+        <section class="skills" id="skills">
 
-            <div class="intro">
+            <div class="container">
 
-                <p>
-                    A strong digital presence can help businesses, professionals,
-                    and organizations connect with their target audiences online.
-                    Digital marketing combines different online channels and
-                    strategies to improve visibility, communicate useful information,
-                    and build relationships with website visitors.
-                </p>
+                <div class="section-heading">
 
-                <br>
+                    <span>What I Do</span>
 
-                <p>
-                    Search engine optimization is an important part of digital
-                    marketing because it focuses on improving a website's visibility
-                    in search engines while maintaining useful and relevant content
-                    for visitors. A well-structured website can also provide a
-                    better experience across desktop and mobile devices.
-                </p>
+                    <h2>My Digital Skills</h2>
+
+                    <p>
+                        Exploring different areas of digital marketing and web technology.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+
+                    <article class="card">
+
+                        <div class="icon purple">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h3>SEO</h3>
+
+                        <p>
+                            Exploring on-page SEO, off-page SEO, technical SEO,
+                            keyword research, internal linking and website optimization.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon pink">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+
+                        <h3>Content Marketing</h3>
+
+                        <p>
+                            Creating useful, engaging and search-friendly content
+                            that provides value to website visitors.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon orange">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
+                        <h3>Digital Marketing</h3>
+
+                        <p>
+                            Learning and working with different digital marketing
+                            concepts to improve online visibility.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon blue">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+
+                        <h3>Keyword Research</h3>
+
+                        <p>
+                            Finding relevant search terms and understanding
+                            search intent to create useful website content.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon green">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h3>Web Technologies</h3>
+
+                        <p>
+                            Exploring HTML, CSS, responsive design and modern
+                            website development concepts.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="icon yellow">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>Website Optimization</h3>
+
+                        <p>
+                            Improving website structure, usability, content,
+                            performance and search engine accessibility.
+                        </p>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
+        <!-- =========================
+             PROJECTS
+        ========================== -->
 
-            <h2>My Digital Projects</h2>
+        <section class="projects" id="projects">
 
-            <div class="cards">
+            <div class="container">
 
-                <article class="card">
-                    <h3>SEO Projects</h3>
+                <div class="section-heading">
+
+                    <span>My Work</span>
+
+                    <h2>Featured Projects</h2>
+
                     <p>
-                        Explore SEO-related projects involving keyword research,
-                        content optimization, on-page SEO, and website improvement.
+                        A collection of digital marketing, SEO and web-related projects.
                     </p>
-                    <a href="#" aria-label="View SEO projects">
-                        View Project
-                    </a>
-                </article>
+
+                </div>
 
 
-                <article class="card">
-                    <h3>Web Projects</h3>
-                    <p>
-                        Discover website projects and experiments focused on
-                        HTML, CSS, responsive design, and user-friendly layouts.
-                    </p>
-                    <a href="#" aria-label="View web projects">
-                        View Project
-                    </a>
-                </article>
+                <div class="cards">
 
 
-                <article class="card">
-                    <h3>Digital Marketing Projects</h3>
-                    <p>
-                        Browse digital marketing projects related to online
-                        visibility, content strategy, website promotion, and SEO.
-                    </p>
-                    <a href="#" aria-label="View digital marketing projects">
-                        View Project
-                    </a>
-                </article>
+                    <article class="project-card">
+
+                        <div class="project-top project-1">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>SEO Projects</h3>
+
+                            <p>
+                                Explore projects related to keyword research,
+                                on-page SEO, content optimization and website visibility.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-top project-2">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Web Projects</h3>
+
+                            <p>
+                                Discover website projects created using HTML,
+                                CSS and responsive web design techniques.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-top project-3">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Digital Marketing</h3>
+
+                            <p>
+                                Explore digital marketing projects focused on
+                                online visibility, content and website promotion.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Learning Section -->
-        <section>
+        <!-- =========================
+             CTA
+        ========================== -->
 
-            <h2>Learning & Digital Marketing Resources</h2>
+        <section class="cta">
 
-            <div class="intro">
+            <div class="container">
 
-                <p>
-                    Digital Anjali is also a space for continuous learning.
-                    Digital marketing and SEO are constantly evolving fields,
-                    so staying updated with search engine practices, content
-                    strategies, website technologies, and user behavior is important.
-                </p>
-
-                <br>
+                <h2>Let's Explore the Digital World Together 🚀</h2>
 
                 <p>
-                    The resources shared on this website are intended to make
-                    digital concepts easier to understand through practical
-                    examples and simple explanations.
+                    Discover SEO insights, digital marketing ideas,
+                    web projects and useful resources through Digital Anjali.
                 </p>
+
+                <a href="#contact" class="btn">
+                    Connect With Me
+                </a>
 
             </div>
 
         </section>
 
 
-        <!-- FAQ Section -->
+        <!-- =========================
+             FAQ
+        ========================== -->
+
         <section id="faq">
 
-            <h2>Frequently Asked Questions</h2>
+            <div class="container">
 
-            <div class="faq">
+                <div class="section-heading">
 
-                <div class="faq-item">
-                    <h3>What is Digital Anjali?</h3>
-                    <p>
-                        Digital Anjali is a personal digital platform focused on
-                        digital marketing, SEO, web technologies, projects,
-                        learning resources, and online marketing insights.
-                    </p>
+                    <span>FAQ</span>
+
+                    <h2>Frequently Asked Questions</h2>
+
                 </div>
 
 
-                <div class="faq-item">
-                    <h3>What topics does Digital Anjali cover?</h3>
-                    <p>
-                        The website covers topics such as SEO, keyword research,
-                        on-page optimization, content marketing, digital marketing,
-                        website optimization, and web technologies.
-                    </p>
-                </div>
+                <div class="faq">
+
+                    <details>
+
+                        <summary>
+                            What is Digital Anjali?
+                        </summary>
+
+                        <p>
+                            Digital Anjali is a personal digital platform focused
+                            on digital marketing, SEO, web technologies, projects
+                            and digital learning resources.
+                        </p>
+
+                    </details>
 
 
-                <div class="faq-item">
-                    <h3>What is SEO?</h3>
-                    <p>
-                        SEO, or Search Engine Optimization, is the process of
-                        improving a website's content, structure, and technical
-                        elements to help search engines understand and discover
-                        its pages.
-                    </p>
-                </div>
+                    <details>
+
+                        <summary>
+                            What topics does Digital Anjali cover?
+                        </summary>
+
+                        <p>
+                            Digital Anjali covers SEO, keyword research,
+                            content marketing, website optimization,
+                            digital marketing and web technologies.
+                        </p>
+
+                    </details>
 
 
-                <div class="faq-item">
-                    <h3>Can I explore Digital Anjali projects?</h3>
-                    <p>
-                        Yes. The Projects section can be used to showcase
-                        digital marketing, SEO, website, and other web-related
-                        projects.
-                    </p>
+                    <details>
+
+                        <summary>
+                            What is SEO?
+                        </summary>
+
+                        <p>
+                            SEO stands for Search Engine Optimization. It involves
+                            improving website content, structure and technical
+                            elements so search engines can better understand
+                            and discover web pages.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Can I explore Digital Anjali projects?
+                        </summary>
+
+                        <p>
+                            Yes. The Projects section can be used to showcase
+                            SEO, digital marketing, web development and other
+                            digital projects.
+                        </p>
+
+                    </details>
+
                 </div>
 
             </div>
@@ -515,42 +1120,58 @@
         </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact">
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <h2>Connect With Digital Anjali</h2>
+        <section class="contact" id="contact">
 
-            <div class="intro">
+            <div class="container">
 
-                <p>
-                    Thank you for visiting Digital Anjali. Explore the website
-                    to learn more about digital marketing, SEO, website
-                    optimization, and digital projects.
-                </p>
+                <div class="section-heading">
 
-                <br>
+                    <span>Get In Touch</span>
 
-                <p>
-                    You can also connect with Digital Anjali through professional
-                    and social platforms.
-                </p>
+                    <h2>Let's Connect</h2>
 
-                <br>
+                    <p>
+                        Follow Digital Anjali and explore more digital projects,
+                        ideas and resources.
+                    </p>
 
-                <p>
-                    <a href="https://github.com/yourusername"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                    &nbsp; | &nbsp;
+                </div>
 
-                    <a href="https://www.linkedin.com/in/yourusername"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
-                </p>
+
+                <div class="contact-box">
+
+                    <div class="social-links">
+
+                        <!-- Replace links with your actual profiles -->
+
+                        <a href="https://github.com/yourusername"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/yourusername"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+
+                        <a href="#"
+                           aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -559,53 +1180,31 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <p>
-            © 2026 Digital Anjali. All Rights Reserved.
-        </p>
+        <div class="container">
 
-        <p>
-            Digital Marketing | SEO | Web Technologies
-        </p>
+            <div class="logo">
+                Digital Anjali
+            </div>
+
+            <p>
+                Digital Marketing • SEO • Web Technologies
+            </p>
+
+            <p>
+                © 2026 Digital Anjali. All Rights Reserved.
+            </p>
+
+        </div>
 
     </footer>
 
 
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Digital Anjali?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Digital Anjali is a personal digital platform focused on digital marketing, SEO, web technologies, projects, learning resources, and online marketing insights."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What topics does Digital Anjali cover?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Digital Anjali covers SEO, keyword research, on-page optimization, content marketing, digital marketing, website optimization, and web technologies."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SEO stands for Search Engine Optimization. It involves improving website content, structure, and technical elements so search engines can better understand and discover web pages."
-          }
-        }
-      ]
-    }
-    </script>
-
 </body>
 </html>
+```
