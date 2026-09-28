@@ -9,36 +9,27 @@
 
     <title>About Anjali DigitalScope | SEO Intern</title>
 
-    <meta name="description"
-          content="Learn about Anjali DigitalScope, an SEO Intern developing practical skills in On-Page SEO, keyword research, content optimization, meta tags and internal linking.">
+    <meta name="description" content="Learn about Anjali DigitalScope, an SEO Intern focused on learning and practicing On-Page SEO, keyword research, content optimization, meta tags, internal linking and image SEO.">
 
-    <meta name="keywords"
-          content="About Anjali DigitalScope, SEO Intern, SEO Portfolio, On-Page SEO, Keyword Research, SEO Skills">
+    <meta name="keywords" content="About Anjali DigitalScope, SEO Intern, On-Page SEO, SEO Learner, Keyword Research">
 
-    <meta name="author" content="Anjali DigitalScope">
+    <meta name="author" content="Anjali">
 
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical"
-          href="https://yourdomain.com/about.html">
+    <meta name="theme-color" content="#07152f">
+
+    <link rel="canonical" href="https://yourdomain.com/about.html">
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
 
@@ -46,16 +37,13 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
             scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: #07111f;
-            color: #ffffff;
+            background: #07152f;
+            color: white;
             line-height: 1.7;
         }
 
@@ -64,80 +52,59 @@
             color: inherit;
         }
 
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-
-        /* HEADER */
-
-        header {
+        .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(4, 12, 25, 0.96);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            backdrop-filter: blur(10px);
+            background: rgba(7, 21, 47, 0.96);
+            border-bottom: 1px solid #1c3564;
+            padding: 18px 7%;
         }
 
-        nav {
-            min-height: 75px;
+        .nav-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
-            font-size: 23px;
-            font-weight: 800;
-            color: #00e5ff;
-        }
-
-        .logo span {
-            color: #a855f7;
+            font-size: 24px;
+            font-weight: 700;
+            color: #00eaff;
         }
 
         .nav-links {
             display: flex;
+            gap: 25px;
             list-style: none;
-            gap: 22px;
         }
 
         .nav-links a {
-            color: #dbeafe;
             font-size: 14px;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #00e5ff;
+            color: #00eaff;
         }
 
-
-        /* HERO */
-
         .hero {
-            padding: 100px 20px;
+            min-height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #07152f, #17104b);
+        }
 
-            background:
-                radial-gradient(
-                    circle at top right,
-                    rgba(0,229,255,0.15),
-                    transparent 35%
-                ),
-                radial-gradient(
-                    circle at bottom left,
-                    rgba(168,85,247,0.15),
-                    transparent 35%
-                );
+        .hero-content {
+            max-width: 800px;
         }
 
         .hero i {
-            font-size: 55px;
-            color: #00e5ff;
+            font-size: 60px;
+            color: #00eaff;
             margin-bottom: 20px;
         }
 
@@ -146,192 +113,144 @@
             margin-bottom: 15px;
         }
 
-        .hero h1 span {
-            color: #00e5ff;
-        }
-
         .hero p {
-            max-width: 750px;
-            margin: auto;
             color: #cbd5e1;
         }
 
-
-        /* SECTION */
-
         section {
-            padding: 75px 0;
+            padding: 80px 7%;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
 
         .section-title h2 {
-            font-size: 34px;
-        }
-
-        .section-title h2 span {
-            color: #00e5ff;
+            font-size: 36px;
+            color: #00eaff;
         }
 
         .section-title p {
             color: #94a3b8;
-            margin-top: 8px;
         }
 
-
-        /* ABOUT */
-
-        .about {
-            background: #0b1728;
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            background: #0d2145;
+            padding: 35px;
+            border-radius: 18px;
+            border: 1px solid #203d70;
         }
 
-        .about-box {
-            background: #101f33;
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .about-box h3 {
-            color: #00e5ff;
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-
-        .about-box p {
+        .about-content p {
             color: #cbd5e1;
             margin-bottom: 18px;
         }
 
-
-        /* SKILLS */
-
-        .skills-grid {
+        .cards {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
-        .skill {
-            background: #0d1b2e;
+        .card {
+            background: #0d2145;
             padding: 25px;
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            border-radius: 16px;
+            border: 1px solid #203d70;
+            transition: 0.3s;
         }
 
-        .skill h3 {
-            color: #00e5ff;
-            margin-bottom: 8px;
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00eaff;
         }
 
-        .skill p {
-            color: #aebdce;
-            font-size: 14px;
-        }
-
-        .skill i {
+        .card i {
+            font-size: 30px;
             color: #a855f7;
-            margin-right: 8px;
+            margin-bottom: 15px;
         }
 
-
-        /* JOURNEY */
+        .card h3 {
+            font-size: 17px;
+        }
 
         .journey {
-            background: #0b1728;
-        }
-
-        .journey-box {
             max-width: 850px;
             margin: auto;
         }
 
         .journey-item {
-            background: #101f33;
+            background: #0d2145;
             padding: 25px;
             margin-bottom: 18px;
-            border-left: 4px solid #00e5ff;
+            border-left: 4px solid #00eaff;
             border-radius: 10px;
         }
 
         .journey-item h3 {
+            color: #00eaff;
             margin-bottom: 8px;
-            color: #ffffff;
         }
 
         .journey-item p {
-            color: #b9c6d5;
-        }
-
-
-        /* CTA */
-
-        .cta {
-            text-align: center;
-        }
-
-        .cta-box {
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(0,229,255,0.12),
-                    rgba(168,85,247,0.12)
-                );
-
-            padding: 50px 25px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .cta-box h2 {
-            font-size: 30px;
-            margin-bottom: 12px;
-        }
-
-        .cta-box p {
             color: #cbd5e1;
-            max-width: 700px;
-            margin: 0 auto 25px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
         }
 
         .btn {
             display: inline-block;
-            padding: 13px 25px;
-            background: #00e5ff;
-            color: #06111f;
-            font-weight: 700;
-            border-radius: 8px;
+            padding: 12px 25px;
+            margin: 7px;
+            border-radius: 30px;
+            background: #00eaff;
+            color: #07152f;
+            font-weight: 600;
             transition: 0.3s;
         }
 
         .btn:hover {
             background: #a855f7;
-            color: #ffffff;
+            color: white;
             transform: translateY(-3px);
         }
 
-
-        /* FOOTER */
-
-        footer {
-            background: #040b14;
-            padding: 30px 0;
-            text-align: center;
-            color: #94a3b8;
-            font-size: 14px;
+        .btn-outline {
+            background: transparent;
+            color: #00eaff;
+            border: 1px solid #00eaff;
         }
 
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #040d20;
+            color: #94a3b8;
+        }
 
-        /* RESPONSIVE */
+        @media (max-width: 900px) {
 
-        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-            nav {
+            .nav-links {
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .nav-container {
                 flex-direction: column;
-                padding: 18px 0;
                 gap: 15px;
             }
 
@@ -341,31 +260,11 @@
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 36px;
             }
 
-            .skills-grid {
+            .cards {
                 grid-template-columns: 1fr;
-            }
-        }
-
-
-        @media (max-width: 500px) {
-
-            .hero {
-                padding: 70px 15px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .about-box {
-                padding: 25px;
-            }
-
-            .section-title h2 {
-                font-size: 28px;
             }
         }
 
@@ -373,22 +272,18 @@
 
 </head>
 
-
 <body>
 
 
-<!-- HEADER -->
+    <!-- Navbar -->
 
-<header>
+    <nav class="navbar">
 
-    <div class="container">
+        <div class="nav-container">
 
-        <nav>
-
-            <a href="index.html" class="logo">
-                Anjali <span>DigitalScope</span>
-            </a>
-
+            <div class="logo">
+                Anjali DigitalScope
+            </div>
 
             <ul class="nav-links">
 
@@ -413,10 +308,6 @@
                 </li>
 
                 <li>
-                    <a href="index.html#projects">Projects</a>
-                </li>
-
-                <li>
                     <a href="index.html#faq">FAQ</a>
                 </li>
 
@@ -426,265 +317,152 @@
 
             </ul>
 
-        </nav>
+        </div>
 
-    </div>
-
-</header>
+    </nav>
 
 
-<!-- HERO -->
+    <!-- Hero -->
 
-<section class="hero">
+    <section class="hero">
 
-    <div class="container">
+        <div class="hero-content">
 
-        <i class="fas fa-user-graduate"></i>
+            <i class="fa-solid fa-user"></i>
 
-        <h1>
-            About <span>Anjali DigitalScope</span>
-        </h1>
+            <h1>About Anjali DigitalScope</h1>
 
-        <p>
-            I am an SEO Intern learning and practicing On-Page SEO,
-            website optimization and digital marketing concepts.
-        </p>
+            <p>
+                Learn more about my SEO learning journey,
+                skills and interest in On-Page SEO.
+            </p>
 
-    </div>
+        </div>
 
-</section>
+    </section>
 
 
-<!-- ABOUT ME -->
+    <!-- About Me -->
 
-<section class="about">
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                About <span>Me</span>
-            </h2>
+            <h2>About Me</h2>
 
-            <p>
-                My SEO learning journey
-            </p>
+            <p>My journey as an SEO Intern</p>
 
         </div>
 
 
-        <div class="about-box">
-
-            <h3>
-                Who I Am
-            </h3>
+        <div class="about-content">
 
             <p>
-                I am currently working as an SEO Intern and developing
-                my practical understanding of Search Engine Optimization.
-                My main area of focus at the moment is On-Page SEO.
+                I am an SEO Intern who is currently learning and practicing
+                Search Engine Optimization with a special focus on On-Page SEO.
             </p>
 
             <p>
-                I am learning how webpages can be optimized through
-                relevant keywords, search intent, title tags,
-                meta descriptions, headings, internal linking,
-                content optimization and image SEO.
+                My learning includes keyword research, search intent,
+                title tags, meta descriptions, heading optimization,
+                internal linking, content optimization and image SEO.
             </p>
 
             <p>
-                Anjali DigitalScope is my personal platform where I
-                document my learning journey and practice creating
-                SEO-friendly and user-friendly webpages.
+                Through Anjali DigitalScope, I am building my understanding
+                of SEO and creating a personal space where I can organize
+                and showcase my learning.
             </p>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- SKILLS -->
+    <!-- Skills -->
 
-<section>
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                What I Am <span>Learning</span>
-            </h2>
+            <h2>My SEO Skills</h2>
 
-            <p>
-                My current SEO skill areas
-            </p>
+            <p>Areas I am learning and practicing</p>
 
         </div>
 
 
-        <div class="skills-grid">
+        <div class="cards">
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-key"></i>
-                    Keyword Research
-                </h3>
-
-                <p>
-                    Finding relevant keywords and understanding
-                    their search intent.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-key"></i>
+                <h3>Keyword Research</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-heading"></i>
-                    Heading Optimization
-                </h3>
-
-                <p>
-                    Learning how to structure H1, H2 and H3 headings
-                    for clear content organization.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-heading"></i>
+                <h3>Heading Optimization</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-tags"></i>
-                    Title & Meta Description
-                </h3>
-
-                <p>
-                    Creating descriptive title tags and useful
-                    meta descriptions.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Title & Meta Description</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-link"></i>
-                    Internal Linking
-                </h3>
-
-                <p>
-                    Connecting relevant pages to improve website
-                    navigation and content discovery.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-link"></i>
+                <h3>Internal Linking</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-image"></i>
-                    Image SEO
-                </h3>
-
-                <p>
-                    Learning about image file names, alt text
-                    and basic image optimization.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-image"></i>
+                <h3>Image SEO</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-pen"></i>
-                    Content Optimization
-                </h3>
-
-                <p>
-                    Creating useful and well-structured content
-                    based on the purpose of the webpage.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-file-lines"></i>
+                <h3>Content Optimization</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-code"></i>
-                    Basic HTML & CSS
-                </h3>
-
-                <p>
-                    Understanding basic HTML and CSS to create
-                    and optimize webpages.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Basic HTML & CSS</h3>
             </div>
 
-
-            <div class="skill">
-
-                <h3>
-                    <i class="fas fa-chart-line"></i>
-                    SEO Analysis
-                </h3>
-
-                <p>
-                    Practicing basic analysis of webpage SEO elements
-                    and optimization opportunities.
-                </p>
-
+            <div class="card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>SEO Analysis</h3>
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- LEARNING JOURNEY -->
+    <!-- Learning Journey -->
 
-<section class="journey">
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                My Learning <span>Journey</span>
-            </h2>
+            <h2>My Learning Journey</h2>
 
-            <p>
-                Step-by-step development of my SEO knowledge
-            </p>
+            <p>Steps in my SEO learning process</p>
 
         </div>
 
 
-        <div class="journey-box">
-
+        <div class="journey">
 
             <div class="journey-item">
 
                 <h3>
-                    01. Learning SEO Fundamentals
+                    1. Learning SEO Fundamentals
                 </h3>
 
                 <p>
-                    Understanding basic SEO concepts, search engines,
-                    keywords and search intent.
+                    Understanding the basic concepts of Search Engine
+                    Optimization and how search engines work.
                 </p>
 
             </div>
@@ -693,12 +471,12 @@
             <div class="journey-item">
 
                 <h3>
-                    02. Practicing On-Page SEO
+                    2. Practicing On-Page SEO
                 </h3>
 
                 <p>
-                    Learning title tags, meta descriptions, headings,
-                    URLs, content optimization and internal linking.
+                    Learning keyword research, title tags, meta descriptions,
+                    headings, internal links and content optimization.
                 </p>
 
             </div>
@@ -707,12 +485,12 @@
             <div class="journey-item">
 
                 <h3>
-                    03. Building SEO Projects
+                    3. Building SEO Projects
                 </h3>
 
                 <p>
-                    Creating webpages and practicing SEO techniques
-                    through personal projects.
+                    Applying SEO concepts while creating and optimizing
+                    websites and content.
                 </p>
 
             </div>
@@ -721,92 +499,65 @@
             <div class="journey-item">
 
                 <h3>
-                    04. Future Learning Goals
+                    4. Future Learning Goals
                 </h3>
 
                 <p>
-                    I plan to expand my knowledge into Technical SEO,
-                    Off-Page SEO, Content SEO and Digital Marketing.
+                    Continuing to develop practical SEO knowledge and
+                    understanding more areas of digital marketing.
                 </p>
 
             </div>
 
         </div>
 
-    </div>
 
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <div class="cta-box">
-
-            <h2>
-                Explore My On-Page SEO Knowledge
-            </h2>
-
-            <p>
-                Learn about keyword research, headings, title tags,
-                meta descriptions, internal linking, image SEO
-                and other important On-Page SEO elements.
-            </p>
+        <div class="buttons">
 
             <a href="on-page-seo.html" class="btn">
-                Explore On-Page SEO
+                Learn On-Page SEO
+            </a>
+
+            <a href="index.html" class="btn btn-outline">
+                Back to Home
             </a>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- FOOTER -->
+    <!-- Footer -->
 
-<footer>
-
-    <div class="container">
+    <footer>
 
         <p>
             © 2026 Anjali DigitalScope. All Rights Reserved.
         </p>
 
-    </div>
-
-</footer>
+    </footer>
 
 
-<!-- PERSON SCHEMA -->
+    <!-- Person Schema -->
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 
-{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Anjali",
-    "jobTitle": "SEO Intern",
-    "url": "https://yourdomain.com/about.html",
-    "description": "SEO Intern learning and practicing On-Page SEO, keyword research, content optimization and website optimization.",
-    "knowsAbout": [
-        "Search Engine Optimization",
-        "On-Page SEO",
-        "Keyword Research",
-        "Content Optimization",
-        "Meta Tags",
-        "Heading Optimization",
-        "Internal Linking",
-        "Image SEO"
-    ]
-}
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anjali",
+        "jobTitle": "SEO Intern",
+        "url": "https://yourdomain.com/about.html",
+        "knowsAbout": [
+            "On-Page SEO",
+            "Keyword Research",
+            "Content Optimization",
+            "Internal Linking",
+            "Image SEO"
+        ]
+    }
 
-</script>
-
+    </script>
 
 </body>
 
