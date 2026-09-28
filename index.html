@@ -1,7 +1,9 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +17,11 @@
         content="Digital Anjali, digital marketing, SEO, SEO professional, digital marketing projects, SEO strategies, content marketing, website optimization">
 
     <meta name="author" content="Digital Anjali">
+
     <meta name="robots" content="index, follow">
+
     <meta name="theme-color" content="#07111f">
 
-    <!-- Replace with your actual website -->
     <link rel="canonical" href="https://yourdomain.com/">
 
     <!-- Open Graph -->
@@ -29,284 +32,894 @@
         content="Explore SEO, digital marketing, web projects and useful digital resources with Digital Anjali.">
 
     <meta property="og:type" content="website">
+
     <meta property="og:url" content="https://yourdomain.com/">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
-:root{
-  --bg:#07111f;
-  --surface:#0d1b2a;
-  --surface-2:#10243a;
-  --text:#eaf6ff;
-  --muted:#9db2c7;
-  --cyan:#22d3ee;
-  --blue:#38bdf8;
-  --purple:#8b5cf6;
-  --line:rgba(148,163,184,.16);
-  --shadow:0 20px 60px rgba(0,0,0,.28);
-}
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{
-  font-family:'Poppins',sans-serif;
-  color:var(--text);
-  background:var(--bg);
-  line-height:1.7;
-}
-a{text-decoration:none}
-img{max-width:100%}
-.container{width:90%;max-width:1180px;margin:auto}
 
-/* NAVIGATION */
-header{
-  position:sticky;top:0;z-index:1000;
-  background:rgba(7,17,31,.78);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--line);
-}
-.navbar{min-height:78px;display:flex;align-items:center;justify-content:space-between}
-.logo{
-  font-size:25px;font-weight:800;letter-spacing:.3px;
-  color:var(--text);
-}
-.logo::after{content:".";color:var(--cyan)}
-.nav-links{display:flex;list-style:none;gap:8px}
-.nav-links a{
-  color:#c7d8e8;font-weight:500;padding:10px 14px;border-radius:10px;
-  transition:.25s;
-}
-.nav-links a:hover{color:var(--cyan);background:rgba(34,211,238,.08)}
+        :root {
+            --bg: #07111f;
+            --surface: #0d1b2a;
+            --surface-2: #10243a;
+            --text: #eaf6ff;
+            --muted: #9db2c7;
+            --cyan: #22d3ee;
+            --blue: #38bdf8;
+            --purple: #8b5cf6;
+            --line: rgba(148, 163, 184, .16);
+            --shadow: 0 20px 60px rgba(0, 0, 0, .28);
+        }
 
-/* HERO */
-.hero{
-  min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden;
-  background:
-    radial-gradient(circle at 78% 22%,rgba(34,211,238,.18),transparent 28%),
-    radial-gradient(circle at 20% 70%,rgba(139,92,246,.14),transparent 30%),
-    linear-gradient(135deg,#07111f,#091827 55%,#07111f);
-}
-.hero::before{
-  content:"";position:absolute;inset:0;opacity:.22;
-  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
-                   linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
-  background-size:42px 42px;
-}
-.hero .container{position:relative;z-index:1}
-.hero-content{
-  max-width:1050px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;
-  gap:55px;align-items:center;text-align:left;
-}
-.hero-copy{max-width:720px}
-.hero-badge{
-  display:inline-flex;padding:8px 16px;border:1px solid rgba(34,211,238,.3);
-  border-radius:999px;background:rgba(34,211,238,.07);color:var(--cyan);
-  font-weight:600;margin-bottom:22px;
-}
-.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.08;margin-bottom:25px;color:#fff}
-.gradient-text{
-  background:linear-gradient(90deg,var(--cyan),var(--blue),#a78bfa);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-}
-.hero p{max-width:720px;color:#b5c7d8;font-size:18px}
-.hero-buttons{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
-.btn{
-  padding:13px 24px;border-radius:12px;font-weight:700;transition:.25s;
-  display:inline-block;
-}
-.btn-primary{
-  color:#04111b;background:linear-gradient(135deg,var(--cyan),var(--blue));
-  box-shadow:0 12px 30px rgba(34,211,238,.2);
-}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(34,211,238,.28)}
-.btn-outline{color:var(--cyan);border:1px solid rgba(34,211,238,.5);background:rgba(255,255,255,.02)}
-.btn-outline:hover{background:var(--cyan);color:#04111b}
-.hero-panel{
-  min-height:300px;border:1px solid var(--line);border-radius:28px;
-  background:linear-gradient(145deg,rgba(16,36,58,.92),rgba(13,27,42,.72));
-  box-shadow:var(--shadow);padding:30px;display:flex;flex-direction:column;justify-content:center;
-}
-.hero-panel .mini-title{color:var(--cyan);font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:700}
-.hero-panel h3{font-size:28px;margin:12px 0}
-.hero-panel p{font-size:14px;color:var(--muted)}
-.stat-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
-.stat{padding:15px;border-radius:14px;background:rgba(255,255,255,.045);border:1px solid var(--line)}
-.stat strong{display:block;color:#fff;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-/* SECTIONS */
-section{padding:100px 0}
-.section-heading{text-align:center;margin-bottom:55px}
-.section-heading span{color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px}
-.section-heading h2{font-size:40px;margin-top:8px;color:#fff}
-.section-heading p{max-width:700px;margin:12px auto 0;color:var(--muted)}
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+        }
 
-/* ABOUT */
-.about{background:#081522}
-.about-content{
-  max-width:900px;margin:auto;padding:38px;border:1px solid var(--line);
-  border-radius:24px;background:linear-gradient(145deg,rgba(16,36,58,.72),rgba(13,27,42,.45));
-  box-shadow:var(--shadow);
-}
-.about-content p{margin-bottom:18px;color:#b8c9d9}
-.about-content p:last-child{margin-bottom:0}
-.highlight{color:var(--cyan);font-weight:600}
+        a {
+            text-decoration: none;
+        }
 
-/* SKILLS */
-.skills{background:#07111f}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{
-  background:linear-gradient(145deg,#0e2033,#0b1928);
-  padding:30px;border-radius:20px;border:1px solid var(--line);
-  box-shadow:0 12px 35px rgba(0,0,0,.16);transition:.3s;position:relative;overflow:hidden;
-}
-.card::before{
-  content:"";position:absolute;top:0;left:0;width:100%;height:2px;
-  background:linear-gradient(90deg,var(--cyan),var(--purple));
-  transform:scaleX(0);transform-origin:left;transition:.3s;
-}
-.card:hover{transform:translateY(-7px);border-color:rgba(34,211,238,.28)}
-.card:hover::before{transform:scaleX(1)}
-.icon{
-  width:58px;height:58px;display:flex;align-items:center;justify-content:center;
-  border-radius:16px;font-size:23px;margin-bottom:20px;
-}
-.purple{background:rgba(139,92,246,.13);color:#a78bfa}
-.pink{background:rgba(236,72,153,.12);color:#f472b6}
-.orange{background:rgba(249,115,22,.12);color:#fb923c}
-.blue{background:rgba(56,189,248,.12);color:#38bdf8}
-.green{background:rgba(34,197,94,.12);color:#4ade80}
-.yellow{background:rgba(234,179,8,.12);color:#facc15}
-.card h3{font-size:20px;margin-bottom:10px}.card p{color:var(--muted);font-size:14px}
+        img {
+            max-width: 100%;
+        }
 
-/* PROJECTS */
-.projects{background:#081522}
-.project-card{
-  background:#0d1b2a;border-radius:22px;overflow:hidden;border:1px solid var(--line);
-  box-shadow:0 15px 40px rgba(0,0,0,.2);transition:.3s;
-}
-.project-card:hover{transform:translateY(-8px);border-color:rgba(34,211,238,.25)}
-.project-top{height:155px;display:flex;align-items:center;justify-content:center;font-size:52px;color:white}
-.project-1{background:linear-gradient(135deg,#0e7490,#164e63)}
-.project-2{background:linear-gradient(135deg,#4338ca,#6d28d9)}
-.project-3{background:linear-gradient(135deg,#0369a1,#2563eb)}
-.project-content{padding:25px}.project-content h3{margin-bottom:10px}
-.project-content p{color:var(--muted);font-size:14px;margin-bottom:18px}
-.project-link{color:var(--cyan);font-weight:700}
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
 
-/* CTA */
-.cta{
-  padding:90px 20px;text-align:center;color:white;
-  background:linear-gradient(135deg,#0e7490,#164e63 45%,#4c1d95);
-}
-.cta h2{font-size:42px;margin-bottom:15px}.cta p{max-width:700px;margin:auto;color:#dbeafe}
-.cta .btn{margin-top:25px;background:#fff;color:#075985}
+        /* =========================
+           NAVIGATION
+        ========================== */
 
-/* FAQ */
-.faq{max-width:900px;margin:auto}
-details{
-  background:#0d1b2a;border:1px solid var(--line);margin-bottom:14px;
-  padding:20px 24px;border-radius:14px;cursor:pointer;
-}
-summary{font-weight:600;color:#e7f4ff}
-details p{margin-top:12px;color:var(--muted)}
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(7, 17, 31, .78);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--line);
+        }
 
-/* CONTACT */
-.contact{background:#07111f}
-.contact-box{
-  max-width:800px;margin:auto;text-align:center;padding:35px;
-  border:1px solid var(--line);border-radius:24px;background:#0d1b2a;
-}
-.social-links{margin-top:5px;display:flex;justify-content:center;gap:14px}
-.social-links a{
-  width:50px;height:50px;display:flex;align-items:center;justify-content:center;
-  border-radius:14px;background:#10243a;color:var(--cyan);font-size:20px;
-  border:1px solid var(--line);transition:.25s;
-}
-.social-links a:hover{color:#06111c;background:var(--cyan);transform:translateY(-4px)}
+        .navbar {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-/* FOOTER */
-footer{background:#040b14;color:#91a6ba;padding:38px 0;text-align:center;border-top:1px solid var(--line)}
-footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3px}
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: .3px;
+            color: var(--text);
+        }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero-content{grid-template-columns:1fr;gap:35px;text-align:center}
-  .hero-copy{margin:auto}.hero p{margin:auto}.hero-buttons{justify-content:center}
-  .hero-panel{text-align:left;max-width:650px;margin:auto}
-  .cards{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:650px){
-  .navbar{flex-direction:column;padding:15px 0;gap:10px}
-  .nav-links{flex-wrap:wrap;justify-content:center;gap:2px}
-  .nav-links a{padding:7px 9px;font-size:13px}
-  section{padding:75px 0}
-  .hero{min-height:650px}.hero h1{font-size:43px}
-  .hero p{font-size:16px}.hero-buttons{justify-content:center}
-  .cards{grid-template-columns:1fr}
-  .section-heading h2{font-size:31px}.cta h2{font-size:31px}
-  .about-content,.contact-box{padding:24px}
-}
-</style>
+        .logo::after {
+            content: ".";
+            color: var(--cyan);
+        }
 
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
 
-    <!-- Person Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Digital Anjali",
-        "url": "https://yourdomain.com/",
-        "jobTitle": "Digital Marketing & SEO Professional",
-        "description": "Digital marketing and SEO professional sharing knowledge, projects and digital marketing resources.",
-        "sameAs": [
-            "https://github.com/yourusername",
-            "https://www.linkedin.com/in/yourusername"
-        ]
-    }
-    </script>
+        .nav-links a {
+            color: #c7d8e8;
+            font-weight: 500;
+            padding: 10px 14px;
+            border-radius: 10px;
+            transition: .25s;
+        }
 
+        .nav-links a:hover {
+            color: var(--cyan);
+            background: rgba(34, 211, 238, .08);
+        }
 
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is Digital Anjali?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Digital Anjali is a personal digital platform focused on digital marketing, SEO, web technologies, projects and digital learning resources."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What topics does Digital Anjali cover?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Digital Anjali covers SEO, keyword research, content marketing, website optimization, digital marketing and web technologies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is SEO?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "SEO stands for Search Engine Optimization. It involves improving website content, structure and technical elements to help search engines understand and discover web pages."
-                }
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 720px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 78% 22%,
+                    rgba(34, 211, 238, .18),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 20% 70%,
+                    rgba(139, 92, 246, .14),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #07111f,
+                    #091827 55%,
+                    #07111f
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: .22;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, .04) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, .04) 1px,
+                    transparent 1px
+                );
+
+            background-size: 42px 42px;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1050px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1.25fr .75fr;
+
+            gap: 55px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .hero-copy {
+            max-width: 720px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            padding: 8px 16px;
+
+            border: 1px solid rgba(34, 211, 238, .3);
+            border-radius: 999px;
+
+            background: rgba(34, 211, 238, .07);
+
+            color: var(--cyan);
+            font-weight: 600;
+
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 76px);
+            line-height: 1.08;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        .gradient-text {
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--blue),
+                    #a78bfa
+                );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 720px;
+            color: #b5c7d8;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: .25s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            color: #04111b;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--cyan),
+                    var(--blue)
+                );
+
+            box-shadow:
+                0 12px 30px rgba(34, 211, 238, .2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 18px 38px rgba(34, 211, 238, .28);
+        }
+
+        .btn-outline {
+            color: var(--cyan);
+
+            border:
+                1px solid rgba(34, 211, 238, .5);
+
+            background:
+                rgba(255, 255, 255, .02);
+        }
+
+        .btn-outline:hover {
+            background: var(--cyan);
+            color: #04111b;
+        }
+
+        .hero-panel {
+            min-height: 300px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(16, 36, 58, .92),
+                    rgba(13, 27, 42, .72)
+                );
+
+            box-shadow: var(--shadow);
+
+            padding: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-panel .mini-title {
+            color: var(--cyan);
+            font-size: 13px;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hero-panel h3 {
+            font-size: 28px;
+            margin: 12px 0;
+        }
+
+        .hero-panel p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .stat {
+            padding: 15px;
+
+            border-radius: 14px;
+
+            background:
+                rgba(255, 255, 255, .045);
+
+            border:
+                1px solid var(--line);
+        }
+
+        .stat strong {
+            display: block;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .stat span {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-heading span {
+            color: var(--cyan);
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .section-heading h2 {
+            font-size: 40px;
+            margin-top: 8px;
+            color: #fff;
+        }
+
+        .section-heading p {
+            max-width: 700px;
+            margin: 12px auto 0;
+            color: var(--muted);
+        }
+
+        /* =========================
+           ABOUT PREVIEW
+        ========================== */
+
+        .about {
+            background: #081522;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+
+            padding: 38px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 24px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(16, 36, 58, .72),
+                    rgba(13, 27, 42, .45)
+                );
+
+            box-shadow: var(--shadow);
+        }
+
+        .about-content p {
+            margin-bottom: 18px;
+            color: #b8c9d9;
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            color: var(--cyan);
+            font-weight: 600;
+        }
+
+        .about-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        .skills {
+            background: #07111f;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background:
+                linear-gradient(
+                    145deg,
+                    #0e2033,
+                    #0b1928
+                );
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            border:
+                1px solid var(--line);
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, .16);
+
+            transition: .3s;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--purple)
+                );
+
+            transform: scaleX(0);
+            transform-origin: left;
+
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(34, 211, 238, .28);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 16px;
+
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .purple {
+            background: rgba(139, 92, 246, .13);
+            color: #a78bfa;
+        }
+
+        .pink {
+            background: rgba(236, 72, 153, .12);
+            color: #f472b6;
+        }
+
+        .orange {
+            background: rgba(249, 115, 22, .12);
+            color: #fb923c;
+        }
+
+        .blue {
+            background: rgba(56, 189, 248, .12);
+            color: #38bdf8;
+        }
+
+        .green {
+            background: rgba(34, 197, 94, .12);
+            color: #4ade80;
+        }
+
+        .yellow {
+            background: rgba(234, 179, 8, .12);
+            color: #facc15;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================== */
+
+        .projects {
+            background: #081522;
+        }
+
+        .project-card {
+            background: #0d1b2a;
+
+            border-radius: 22px;
+            overflow: hidden;
+
+            border:
+                1px solid var(--line);
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, .2);
+
+            transition: .3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(34, 211, 238, .25);
+        }
+
+        .project-top {
+            height: 155px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 52px;
+            color: white;
+        }
+
+        .project-1 {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0e7490,
+                    #164e63
+                );
+        }
+
+        .project-2 {
+            background:
+                linear-gradient(
+                    135deg,
+                    #4338ca,
+                    #6d28d9
+                );
+        }
+
+        .project-3 {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0369a1,
+                    #2563eb
+                );
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .project-link {
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            padding: 90px 20px;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0e7490,
+                    #164e63 45%,
+                    #4c1d95
+                );
+        }
+
+        .cta h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: auto;
+            color: #dbeafe;
+        }
+
+        .cta .btn {
+            margin-top: 25px;
+            background: #fff;
+            color: #075985;
+        }
+
+        /* =========================
+           FAQ
+        ========================== */
+
+        .faq {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        details {
+            background: #0d1b2a;
+
+            border:
+                1px solid var(--line);
+
+            margin-bottom: 14px;
+
+            padding: 20px 24px;
+
+            border-radius: 14px;
+
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: 600;
+            color: #e7f4ff;
+        }
+
+        details p {
+            margin-top: 12px;
+            color: var(--muted);
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background: #07111f;
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+
+            text-align: center;
+            padding: 35px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 24px;
+
+            background: #0d1b2a;
+        }
+
+        .social-links {
+            margin-top: 5px;
+
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: #10243a;
+            color: var(--cyan);
+
+            font-size: 20px;
+
+            border:
+                1px solid var(--line);
+
+            transition: .25s;
+        }
+
+        .social-links a:hover {
+            color: #06111c;
+            background: var(--cyan);
+            transform: translateY(-4px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #040b14;
+            color: #91a6ba;
+
+            padding: 38px 0;
+
+            text-align: center;
+
+            border-top:
+                1px solid var(--line);
+        }
+
+        footer .logo {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media(max-width: 900px) {
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                text-align: center;
             }
-        ]
-    }
-    </script>
+
+            .hero-copy {
+                margin: auto;
+            }
+
+            .hero p {
+                margin: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-panel {
+                text-align: left;
+                max-width: 650px;
+                margin: auto;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media(max-width: 650px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2px;
+            }
+
+            .nav-links a {
+                padding: 7px 9px;
+                font-size: 13px;
+            }
+
+            section {
+                padding: 75px 0;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading h2 {
+                font-size: 31px;
+            }
+
+            .cta h2 {
+                font-size: 31px;
+            }
+
+            .about-content,
+            .contact-box {
+                padding: 24px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -322,38 +935,43 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
         <div class="container navbar">
 
-            <a href="#home" class="logo">
+            <!-- Logo opens Home -->
+            <a href="index.html" class="logo">
                 Digital Anjali
             </a>
 
+
             <nav>
+
                 <ul class="nav-links">
 
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <!-- IMPORTANT: Opens separate About page -->
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
 
                     <li>
-                        <a href="#about">About</a>
+                        <a href="index.html#skills">Skills</a>
                     </li>
 
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a href="index.html#projects">Projects</a>
                     </li>
 
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="index.html#faq">FAQ</a>
                     </li>
 
                     <li>
-                        <a href="#faq">FAQ</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a href="index.html#contact">Contact</a>
                     </li>
 
                 </ul>
+
             </nav>
 
         </div>
@@ -373,51 +991,131 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
             <div class="container">
 
                 <div class="hero-content">
-                        <div class="hero-copy">
-                            <div class="hero-badge">✦ Welcome to Digital Anjali</div>
-                            <h1>Learn. <span class="gradient-text">Create.</span> Grow.</h1>
-                            <p>
-                                Welcome to Digital Anjali — a creative digital platform focused on
-                                <strong>Digital Marketing, SEO, Content Marketing, Website Optimization and Web Technologies.</strong>
-                                Explore practical knowledge, projects and useful digital resources.
-                            </p>
-                            <div class="hero-buttons">
-                                <a href="#projects" class="btn btn-primary">Explore Projects</a>
-                                <a href="#contact" class="btn btn-outline">Let's Connect</a>
-                            </div>
+
+
+                    <div class="hero-copy">
+
+                        <div class="hero-badge">
+                            ✦ Welcome to Digital Anjali
                         </div>
-                        <aside class="hero-panel">
-                            <div class="mini-title">Digital Focus</div>
-                            <h3>Ideas that become useful digital experiences.</h3>
-                            <p>Explore practical SEO, marketing and web projects in one clean space.</p>
-                            <div class="stat-row">
-                                <div class="stat"><strong>SEO</strong><span>Search visibility</span></div>
-                                <div class="stat"><strong>Web</strong><span>Modern interfaces</span></div>
-                                <div class="stat"><strong>Content</strong><span>Useful resources</span></div>
-                                <div class="stat"><strong>Growth</strong><span>Digital strategy</span></div>
-                            </div>
-                        </aside>
+
+
+                        <h1>
+                            Learn.
+                            <span class="gradient-text">
+                                Create.
+                            </span>
+                            Grow.
+                        </h1>
+
+
+                        <p>
+                            Welcome to Digital Anjali — a creative digital
+                            platform focused on
+                            <strong>
+                                Digital Marketing, SEO, Content Marketing,
+                                Website Optimization and Web Technologies.
+                            </strong>
+                            Explore practical knowledge, projects and useful
+                            digital resources.
+                        </p>
+
+
+                        <div class="hero-buttons">
+
+                            <a
+                                href="#projects"
+                                class="btn btn-primary">
+
+                                Explore Projects
+
+                            </a>
+
+
+                            <a
+                                href="#contact"
+                                class="btn btn-outline">
+
+                                Let's Connect
+
+                            </a>
+
+                        </div>
+
                     </div>
+
+
+                    <aside class="hero-panel">
+
+                        <div class="mini-title">
+                            Digital Focus
+                        </div>
+
+                        <h3>
+                            Ideas that become useful digital experiences.
+                        </h3>
+
+                        <p>
+                            Explore practical SEO, marketing and web projects
+                            in one clean space.
+                        </p>
+
+
+                        <div class="stat-row">
+
+                            <div class="stat">
+                                <strong>SEO</strong>
+                                <span>Search visibility</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>Web</strong>
+                                <span>Modern interfaces</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>Content</strong>
+                                <span>Useful resources</span>
+                            </div>
+
+                            <div class="stat">
+                                <strong>Growth</strong>
+                                <span>Digital strategy</span>
+                            </div>
+
+                        </div>
+
+                    </aside>
+
                 </div>
-            </section>
+
+            </div>
+
+        </section>
 
 
         <!-- =========================
-             ABOUT
+             ABOUT PREVIEW
         ========================== -->
 
         <section class="about" id="about">
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <span>About Me</span>
+                    <span>
+                        About Me
+                    </span>
 
-                    <h2>Welcome to Digital Anjali</h2>
+                    <h2>
+                        Welcome to Digital Anjali
+                    </h2>
 
                     <p>
-                        A space for digital marketing, SEO and creative web projects.
+                        A space for digital marketing, SEO and creative
+                        web projects.
                     </p>
 
                 </div>
@@ -426,23 +1124,56 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                 <div class="about-content">
 
                     <p>
-                        <strong>Digital Anjali</strong> is a personal digital platform
-                        focused on learning, creating and exploring the continuously
-                        evolving world of digital marketing and technology.
+
+                        <strong>
+                            Digital Anjali
+                        </strong>
+
+                        is a personal digital platform focused on learning,
+                        creating and exploring the continuously evolving
+                        world of digital marketing and technology.
+
                     </p>
 
+
                     <p>
+
                         Here you can explore practical information about
-                        <span class="highlight">Search Engine Optimization (SEO)</span>,
-                        keyword research, content marketing, website optimization,
-                        digital marketing strategies and web technologies.
+
+                        <span class="highlight">
+                            Search Engine Optimization (SEO)
+                        </span>,
+
+                        keyword research, content marketing,
+                        website optimization, digital marketing
+                        strategies and web technologies.
+
                     </p>
 
+
                     <p>
-                        The goal is to make digital concepts easier to understand
-                        through simple explanations, practical projects and
-                        useful resources.
+
+                        The goal is to make digital concepts easier to
+                        understand through simple explanations,
+                        practical projects and useful resources.
+
                     </p>
+
+
+                    <!-- Opens separate About page -->
+
+                    <div class="about-button">
+
+                        <a
+                            href="about.html"
+                            class="btn btn-primary">
+
+                            Read More About Me
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -459,14 +1190,20 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <span>What I Do</span>
+                    <span>
+                        What I Do
+                    </span>
 
-                    <h2>My Digital Skills</h2>
+                    <h2>
+                        My Digital Skills
+                    </h2>
 
                     <p>
-                        Exploring different areas of digital marketing and web technology.
+                        Exploring different areas of digital marketing
+                        and web technology.
                     </p>
 
                 </div>
@@ -478,14 +1215,19 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon purple">
+
                             <i class="fa-solid fa-magnifying-glass"></i>
+
                         </div>
 
-                        <h3>SEO</h3>
+                        <h3>
+                            SEO
+                        </h3>
 
                         <p>
-                            Exploring on-page SEO, off-page SEO, technical SEO,
-                            keyword research, internal linking and website optimization.
+                            Exploring on-page SEO, off-page SEO,
+                            technical SEO, keyword research,
+                            internal linking and website optimization.
                         </p>
 
                     </article>
@@ -494,14 +1236,18 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon pink">
+
                             <i class="fa-solid fa-pen-nib"></i>
+
                         </div>
 
-                        <h3>Content Marketing</h3>
+                        <h3>
+                            Content Marketing
+                        </h3>
 
                         <p>
-                            Creating useful, engaging and search-friendly content
-                            that provides value to website visitors.
+                            Creating useful, engaging and search-friendly
+                            content that provides value to website visitors.
                         </p>
 
                     </article>
@@ -510,14 +1256,18 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon orange">
+
                             <i class="fa-solid fa-bullhorn"></i>
+
                         </div>
 
-                        <h3>Digital Marketing</h3>
+                        <h3>
+                            Digital Marketing
+                        </h3>
 
                         <p>
-                            Learning and working with different digital marketing
-                            concepts to improve online visibility.
+                            Learning and working with different digital
+                            marketing concepts to improve online visibility.
                         </p>
 
                     </article>
@@ -526,10 +1276,14 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon blue">
+
                             <i class="fa-solid fa-key"></i>
+
                         </div>
 
-                        <h3>Keyword Research</h3>
+                        <h3>
+                            Keyword Research
+                        </h3>
 
                         <p>
                             Finding relevant search terms and understanding
@@ -542,14 +1296,18 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon green">
+
                             <i class="fa-solid fa-laptop-code"></i>
+
                         </div>
 
-                        <h3>Web Technologies</h3>
+                        <h3>
+                            Web Technologies
+                        </h3>
 
                         <p>
-                            Exploring HTML, CSS, responsive design and modern
-                            website development concepts.
+                            Exploring HTML, CSS, responsive design and
+                            modern website development concepts.
                         </p>
 
                     </article>
@@ -558,17 +1316,23 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="card">
 
                         <div class="icon yellow">
+
                             <i class="fa-solid fa-chart-line"></i>
+
                         </div>
 
-                        <h3>Website Optimization</h3>
+                        <h3>
+                            Website Optimization
+                        </h3>
 
                         <p>
-                            Improving website structure, usability, content,
-                            performance and search engine accessibility.
+                            Improving website structure, usability,
+                            content, performance and search engine
+                            accessibility.
                         </p>
 
                     </article>
+
 
                 </div>
 
@@ -585,14 +1349,20 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <span>My Work</span>
+                    <span>
+                        My Work
+                    </span>
 
-                    <h2>Featured Projects</h2>
+                    <h2>
+                        Featured Projects
+                    </h2>
 
                     <p>
-                        A collection of digital marketing, SEO and web-related projects.
+                        A collection of digital marketing,
+                        SEO and web-related projects.
                     </p>
 
                 </div>
@@ -604,16 +1374,22 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="project-card">
 
                         <div class="project-top project-1">
+
                             <i class="fa-solid fa-chart-simple"></i>
+
                         </div>
+
 
                         <div class="project-content">
 
-                            <h3>SEO Projects</h3>
+                            <h3>
+                                SEO Projects
+                            </h3>
 
                             <p>
                                 Explore projects related to keyword research,
-                                on-page SEO, content optimization and website visibility.
+                                on-page SEO, content optimization and
+                                website visibility.
                             </p>
 
                             <a href="#" class="project-link">
@@ -628,16 +1404,22 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="project-card">
 
                         <div class="project-top project-2">
+
                             <i class="fa-solid fa-globe"></i>
+
                         </div>
+
 
                         <div class="project-content">
 
-                            <h3>Web Projects</h3>
+                            <h3>
+                                Web Projects
+                            </h3>
 
                             <p>
-                                Discover website projects created using HTML,
-                                CSS and responsive web design techniques.
+                                Discover website projects created using
+                                HTML, CSS and responsive web design
+                                techniques.
                             </p>
 
                             <a href="#" class="project-link">
@@ -652,16 +1434,22 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                     <article class="project-card">
 
                         <div class="project-top project-3">
+
                             <i class="fa-solid fa-rocket"></i>
+
                         </div>
+
 
                         <div class="project-content">
 
-                            <h3>Digital Marketing</h3>
+                            <h3>
+                                Digital Marketing
+                            </h3>
 
                             <p>
-                                Explore digital marketing projects focused on
-                                online visibility, content and website promotion.
+                                Explore digital marketing projects focused
+                                on online visibility, content and website
+                                promotion.
                             </p>
 
                             <a href="#" class="project-link">
@@ -671,6 +1459,7 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                         </div>
 
                     </article>
+
 
                 </div>
 
@@ -687,7 +1476,9 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
             <div class="container">
 
-                <h2>Let's Explore the Digital World Together 🚀</h2>
+                <h2>
+                    Let's Explore the Digital World Together 🚀
+                </h2>
 
                 <p>
                     Discover SEO insights, digital marketing ideas,
@@ -711,16 +1502,22 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <span>FAQ</span>
+                    <span>
+                        FAQ
+                    </span>
 
-                    <h2>Frequently Asked Questions</h2>
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
 
                 </div>
 
 
                 <div class="faq">
+
 
                     <details>
 
@@ -729,9 +1526,10 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                         </summary>
 
                         <p>
-                            Digital Anjali is a personal digital platform focused
-                            on digital marketing, SEO, web technologies, projects
-                            and digital learning resources.
+                            Digital Anjali is a personal digital platform
+                            focused on digital marketing, SEO, web
+                            technologies, projects and digital learning
+                            resources.
                         </p>
 
                     </details>
@@ -759,10 +1557,11 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                         </summary>
 
                         <p>
-                            SEO stands for Search Engine Optimization. It involves
-                            improving website content, structure and technical
-                            elements so search engines can better understand
-                            and discover web pages.
+                            SEO stands for Search Engine Optimization.
+                            It involves improving website content,
+                            structure and technical elements so search
+                            engines can better understand and discover
+                            web pages.
                         </p>
 
                     </details>
@@ -775,12 +1574,13 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
                         </summary>
 
                         <p>
-                            Yes. The Projects section can be used to showcase
-                            SEO, digital marketing, web development and other
-                            digital projects.
+                            Yes. The Projects section can be used to
+                            showcase SEO, digital marketing, web
+                            development and other digital projects.
                         </p>
 
                     </details>
+
 
                 </div>
 
@@ -797,15 +1597,20 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <span>Get In Touch</span>
+                    <span>
+                        Get In Touch
+                    </span>
 
-                    <h2>Let's Connect</h2>
+                    <h2>
+                        Let's Connect
+                    </h2>
 
                     <p>
-                        Follow Digital Anjali and explore more digital projects,
-                        ideas and resources.
+                        Follow Digital Anjali and explore more digital
+                        projects, ideas and resources.
                     </p>
 
                 </div>
@@ -815,28 +1620,39 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
                     <div class="social-links">
 
-                        <!-- Replace links with your actual profiles -->
 
-                        <a href="https://github.com/yourusername"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="GitHub">
+                        <!-- Replace these with your actual profiles -->
+
+                        <a
+                            href="https://github.com/yourusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
                             <i class="fa-brands fa-github"></i>
+
                         </a>
 
 
-                        <a href="https://www.linkedin.com/in/yourusername"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/yourusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
                             <i class="fa-brands fa-linkedin-in"></i>
+
                         </a>
 
 
-                        <a href="#"
-                           aria-label="Instagram">
+                        <a
+                            href="#"
+                            aria-label="Instagram">
+
                             <i class="fa-brands fa-instagram"></i>
+
                         </a>
+
 
                     </div>
 
@@ -845,6 +1661,7 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
             </div>
 
         </section>
+
 
     </main>
 
@@ -875,6 +1692,6 @@ footer .logo{margin-bottom:10px;color:#fff} footer p{font-size:13px;margin-top:3
 
 
 </body>
-</html>
 
+</html>
 ```
