@@ -1,1 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEO Blog | Anjali DigitalScope</title>
+
+    <meta name="description" content="Read beginner-friendly SEO blogs from Anjali DigitalScope covering keyword research, On-Page SEO, title tags, meta descriptions, heading optimization, internal linking, image SEO and content optimization.">
+
+    <meta name="keywords" content="SEO Blog, On-Page SEO Blog, Keyword Research Blog, SEO Tips, SEO Intern, Anjali DigitalScope">
+
+    <meta name="author" content="Anjali">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#07152f">
+
+    <link rel="canonical" href="https://yourdomain.com/blog.html">
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #07152f;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(7, 21, 47, 0.96);
+
+            border-bottom: 1px solid #1c3564;
+
+            padding: 18px 7%;
+        }
+
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00eaff;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+
+        .nav-links a {
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: #00eaff;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 55vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 70px 7%;
+
+            background: linear-gradient(
+                135deg,
+                #07152f,
+                #17104b
+            );
+        }
+
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+
+        .hero i {
+            font-size: 60px;
+            color: #00eaff;
+            margin-bottom: 20px;
+        }
+
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+
+        .hero h2 {
+            font-size: 24px;
+            color: #a855f7;
+            margin-bottom: 15px;
+        }
+
+
+        .hero p {
+            color: #cbd5e1;
+            max-width: 750px;
+            margin: auto;
+        }
+
+
+        /* ================= SECTION ================= */
+
+        section {
+            padding: 80px 7%;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #00eaff;
+            margin-bottom: 10px;
+        }
+
+
+        .section-title p {
+            color: #94a3b8;
+        }
+
+
+        /* ================= BLOG GRID ================= */
+
+        .blog-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .blog-card {
+            background: #0d2145;
+
+            border: 1px solid #203d70;
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            transition: 0.3s;
+        }
+
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #00eaff;
+
+            box-shadow:
+                0 10px 30px rgba(
+                    0,
+                    234,
+                    255,
+                    0.12
+                );
+        }
+
+
+        .blog-icon {
+            width: 65px;
+            height: 65px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #07152f;
+
+            border-radius: 50%;
+
+            margin-bottom: 20px;
+        }
+
+
+        .blog-icon i {
+            font-size: 28px;
+            color: #00eaff;
+        }
+
+
+        .blog-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+
+        .blog-card p {
+            color: #aebbd0;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+
+        .blog-tag {
+            display: inline-block;
+
+            background: #17104b;
+
+            color: #a855f7;
+
+            padding: 5px 12px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* ================= READ BUTTON ================= */
+
+        .read-btn {
+            display: inline-block;
+
+            padding: 9px 18px;
+
+            border-radius: 25px;
+
+            background: #00eaff;
+
+            color: #07152f;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        .read-btn:hover {
+            background: #a855f7;
+
+            color: #ffffff;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= FEATURED BLOG ================= */
+
+        .featured {
+            max-width: 950px;
+
+            margin: auto;
+
+            background: #0d2145;
+
+            border: 1px solid #203d70;
+
+            border-radius: 20px;
+
+            padding: 40px;
+
+            text-align: center;
+        }
+
+
+        .featured i {
+            font-size: 45px;
+
+            color: #00eaff;
+
+            margin-bottom: 18px;
+        }
+
+
+        .featured h2 {
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .featured p {
+            color: #cbd5e1;
+
+            max-width: 750px;
+
+            margin: auto;
+        }
+
+
+        /* ================= SEO TOPICS ================= */
+
+        .topics {
+            max-width: 900px;
+
+            margin: auto;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 15px;
+        }
+
+
+        .topic {
+            padding: 12px 20px;
+
+            background: #0d2145;
+
+            border: 1px solid #203d70;
+
+            border-radius: 30px;
+
+            color: #cbd5e1;
+
+            transition: 0.3s;
+        }
+
+
+        .topic:hover {
+            color: #00eaff;
+
+            border-color: #00eaff;
+        }
+
+
+        /* ================= BUTTONS ================= */
+
+        .buttons {
+            text-align: center;
+
+            margin-top: 45px;
+        }
+
+
+        .btn {
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            margin: 7px;
+
+            border-radius: 30px;
+
+            background: #00eaff;
+
+            color: #07152f;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        .btn:hover {
+            background: #a855f7;
+
+            color: #ffffff;
+
+            transform: translateY(-3px);
+        }
+
+
+        .btn-outline {
+            background: transparent;
+
+            color: #00eaff;
+
+            border: 1px solid #00eaff;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+
+            padding: 25px;
+
+            background: #040d20;
+
+            color: #94a3b8;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 950px) {
+
+            .blog-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                gap: 14px;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .nav-container {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            .nav-links {
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+
+            .blog-container {
+                grid-template-columns: 1fr;
+            }
+
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+
+            .featured {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+
+            <div class="logo">
+                Anjali DigitalScope
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="on-page-seo.html">
+                        On-Page SEO
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#faq">
+                        FAQ
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+
+            <i class="fa-solid fa-blog"></i>
+
+
+            <h1>
+                SEO Blog
+            </h1>
+
+
+            <h2>
+                Learn SEO in a Simple Way
+            </h2>
+
+
+            <p>
+                Welcome to the Anjali DigitalScope SEO Blog.
+                Explore beginner-friendly articles about On-Page SEO,
+                keyword research, content optimization and other
+                important SEO concepts.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BLOG POSTS ================= -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                Latest SEO Articles
+            </h2>
+
+            <p>
+                Explore simple guides and practical SEO concepts
+            </p>
+
+        </div>
+
+
+        <div class="blog-container">
+
+
+            <!-- Blog 1 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-key"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Keyword Research
+                </span>
+
+
+                <h3>
+                    What Is Keyword Research in SEO?
+                </h3>
+
+
+                <p>
+                    Learn what keyword research is, why it matters
+                    and how keywords help you understand what users
+                    search for online.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 2 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-heading"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    On-Page SEO
+                </span>
+
+
+                <h3>
+                    H1, H2 & H3 Headings in SEO
+                </h3>
+
+
+                <p>
+                    Understand how heading tags organize webpage
+                    content and create a clear content structure.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 3 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-tags"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Meta Tags
+                </span>
+
+
+                <h3>
+                    Title Tags & Meta Descriptions
+                </h3>
+
+
+                <p>
+                    Learn the purpose of title tags and meta descriptions
+                    and how they describe the content of a webpage.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 4 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-link"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Internal Linking
+                </span>
+
+
+                <h3>
+                    Internal Linking for SEO
+                </h3>
+
+
+                <p>
+                    Learn how internal links connect related pages
+                    and help users navigate through a website.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 5 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-image"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Image SEO
+                </span>
+
+
+                <h3>
+                    Image SEO Basics for Beginners
+                </h3>
+
+
+                <p>
+                    Discover basic image SEO practices including
+                    descriptive file names and useful alt text.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 6 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Content SEO
+                </span>
+
+
+                <h3>
+                    How to Optimize Content for SEO
+                </h3>
+
+
+                <p>
+                    Learn how useful, readable and well-structured
+                    content can support a better webpage experience.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 7 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    Search Intent
+                </span>
+
+
+                <h3>
+                    Understanding Search Intent
+                </h3>
+
+
+                <p>
+                    Learn why understanding the reason behind a search
+                    query is important when creating SEO content.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 8 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    SEO Basics
+                </span>
+
+
+                <h3>
+                    What Is On-Page SEO?
+                </h3>
+
+
+                <p>
+                    A beginner-friendly introduction to On-Page SEO
+                    and the important elements of a webpage.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+
+            <!-- Blog 9 -->
+
+            <article class="blog-card">
+
+                <div class="blog-icon">
+
+                    <i class="fa-solid fa-list-check"></i>
+
+                </div>
+
+
+                <span class="blog-tag">
+                    SEO Checklist
+                </span>
+
+
+                <h3>
+                    On-Page SEO Checklist for Beginners
+                </h3>
+
+
+                <p>
+                    Use a simple checklist to review important
+                    On-Page SEO elements before publishing a webpage.
+                </p>
+
+
+                <a href="on-page-seo.html" class="read-btn">
+                    Read More
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURED ================= -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                Featured SEO Guide
+            </h2>
+
+            <p>
+                Start learning On-Page SEO step by step
+            </p>
+
+        </div>
+
+
+        <div class="featured">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+
+            <h2>
+                Complete On-Page SEO Guide
+            </h2>
+
+
+            <p>
+                Learn about keyword research, title tags,
+                meta descriptions, heading structure,
+                SEO-friendly URLs, internal linking,
+                image SEO, content optimization and search intent.
+            </p>
+
+
+            <div class="buttons">
+
+                <a href="on-page-seo.html" class="btn">
+                    Read SEO Guide
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SEO TOPICS ================= -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                SEO Topics
+            </h2>
+
+            <p>
+                Topics covered on Anjali DigitalScope
+            </p>
+
+        </div>
+
+
+        <div class="topics">
+
+            <span class="topic">
+                Keyword Research
+            </span>
+
+            <span class="topic">
+                On-Page SEO
+            </span>
+
+            <span class="topic">
+                Title Tags
+            </span>
+
+            <span class="topic">
+                Meta Descriptions
+            </span>
+
+            <span class="topic">
+                H1 H2 H3
+            </span>
+
+            <span class="topic">
+                Internal Linking
+            </span>
+
+            <span class="topic">
+                Image SEO
+            </span>
+
+            <span class="topic">
+                Content Optimization
+            </span>
+
+            <span class="topic">
+                Search Intent
+            </span>
+
+            <span class="topic">
+                SEO Basics
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BUTTONS ================= -->
+
+    <div class="buttons">
+
+        <a href="index.html" class="btn">
+            Back to Home
+        </a>
+
+
+        <a href="skills.html" class="btn btn-outline">
+            View My Skills
+        </a>
+
+
+        <a href="on-page-seo.html" class="btn btn-outline">
+            Learn On-Page SEO
+        </a>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Anjali DigitalScope. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= BLOG SCHEMA ================= -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Anjali DigitalScope SEO Blog",
+        "description": "Beginner-friendly SEO articles about On-Page SEO, keyword research, content optimization and SEO basics.",
+        "url": "https://yourdomain.com/blog.html",
+        "author": {
+            "@type": "Person",
+            "name": "Anjali"
+        }
+    }
+
+    </script>
+
+
+</body>
+
+</html>
