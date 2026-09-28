@@ -9,58 +9,43 @@
 
     <title>On-Page SEO Guide | Anjali DigitalScope</title>
 
-    <meta name="description"
-        content="Learn On-Page SEO with Anjali DigitalScope. Explore keyword research, title tags, meta descriptions, headings, SEO-friendly URLs, internal linking, image SEO and content optimization.">
+    <meta name="description" content="Learn On-Page SEO with Anjali DigitalScope. Understand keyword research, title tags, meta descriptions, H1 H2 H3 headings, URLs, internal linking, image SEO, content optimization and search intent.">
 
-    <meta name="keywords"
-        content="On-Page SEO, On Page SEO Guide, SEO Intern, Keyword Research, Title Tag, Meta Description, H1 H2 H3, Internal Linking, Image SEO, Content Optimization">
+    <meta name="keywords" content="On-Page SEO, On-Page SEO Guide, Keyword Research, Title Tag, Meta Description, H1 H2 H3, Internal Linking, Image SEO">
 
-    <meta name="author" content="Anjali DigitalScope">
+    <meta name="author" content="Anjali">
 
     <meta name="robots" content="index, follow">
 
-    <meta name="theme-color" content="#07111f">
+    <meta name="theme-color" content="#07152f">
 
     <link rel="canonical" href="https://yourdomain.com/on-page-seo.html">
-
 
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
     <style>
-
-        /* =========================
-           RESET
-        ========================= */
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
             scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: #07111f;
+            background: #07152f;
             color: #ffffff;
             line-height: 1.7;
         }
@@ -70,149 +55,73 @@
             color: inherit;
         }
 
-        .container {
-            width: 90%;
-            max-width: 1150px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
+        .navbar {
             position: sticky;
             top: 0;
             z-index: 1000;
-
-            background: rgba(4, 12, 25, 0.96);
-
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-
-            backdrop-filter: blur(10px);
+            background: rgba(7, 21, 47, 0.96);
+            border-bottom: 1px solid #1c3564;
+            padding: 18px 7%;
         }
 
-        nav {
-            min-height: 75px;
-
+        .nav-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
-            font-size: 23px;
-            font-weight: 800;
-            color: #00e5ff;
-        }
-
-        .logo span {
-            color: #a855f7;
+            font-size: 24px;
+            font-weight: 700;
+            color: #00eaff;
         }
 
         .nav-links {
             display: flex;
+            gap: 25px;
             list-style: none;
-            gap: 22px;
         }
 
         .nav-links a {
-            color: #dbeafe;
             font-size: 14px;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #00e5ff;
+            color: #00eaff;
         }
-
-
-        /* =========================
-           HERO
-        ========================= */
 
         .hero {
-            padding: 100px 20px;
-
+            min-height: 55vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-
-            background:
-                radial-gradient(
-                    circle at top right,
-                    rgba(0,229,255,0.15),
-                    transparent 35%
-                ),
-
-                radial-gradient(
-                    circle at bottom left,
-                    rgba(168,85,247,0.15),
-                    transparent 35%
-                );
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #07152f, #17104b);
         }
 
-        .hero-icon {
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero i {
             font-size: 60px;
-            color: #00e5ff;
+            color: #00eaff;
             margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 50px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #00e5ff;
+            font-size: 48px;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            max-width: 800px;
-            margin: auto;
-
             color: #cbd5e1;
-
-            font-size: 17px;
         }
-
-
-        /* =========================
-           BUTTON
-        ========================= */
-
-        .btn {
-            display: inline-block;
-
-            margin-top: 25px;
-
-            padding: 13px 26px;
-
-            background: #00e5ff;
-
-            color: #06111f;
-
-            font-weight: 700;
-
-            border-radius: 8px;
-
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #a855f7;
-            color: white;
-
-            transform: translateY(-3px);
-        }
-
-
-        /* =========================
-           GENERAL SECTION
-        ========================= */
 
         section {
-            padding: 80px 0;
+            padding: 80px 7%;
         }
 
         .section-title {
@@ -221,318 +130,178 @@
         }
 
         .section-title h2 {
-            font-size: 34px;
+            font-size: 36px;
+            color: #00eaff;
             margin-bottom: 10px;
-        }
-
-        .section-title h2 span {
-            color: #00e5ff;
         }
 
         .section-title p {
             color: #94a3b8;
         }
 
-
-        /* =========================
-           INTRO
-        ========================= */
-
         .intro {
-            background: #0b1728;
-        }
-
-        .intro-box {
             max-width: 900px;
-
             margin: auto;
-
-            background: #101f33;
-
+            background: #0d2145;
             padding: 35px;
-
             border-radius: 18px;
-
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid #203d70;
         }
 
-        .intro-box p {
+        .intro p {
             color: #cbd5e1;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
         }
 
-        .intro-box p:last-child {
-            margin-bottom: 0;
-        }
-
-
-        /* =========================
-           SEO CARDS
-        ========================= */
-
-        .seo-grid {
+        .cards {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        .seo-card {
-            background: #0d1b2e;
-
-            padding: 30px;
-
+        .card {
+            background: #0d2145;
+            padding: 28px;
             border-radius: 18px;
-
-            border: 1px solid rgba(255,255,255,0.08);
-
+            border: 1px solid #203d70;
             transition: 0.3s;
         }
 
-        .seo-card:hover {
-            transform: translateY(-8px);
-
-            border-color: #00e5ff;
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #00eaff;
         }
 
-        .seo-card i {
-            font-size: 32px;
-
-            color: #00e5ff;
-
-            margin-bottom: 18px;
+        .card i {
+            font-size: 35px;
+            color: #a855f7;
+            margin-bottom: 15px;
         }
 
-        .seo-card h3 {
-            font-size: 20px;
-
+        .card h3 {
             margin-bottom: 10px;
         }
 
-        .seo-card p {
-            color: #aebdce;
-
+        .card p {
+            color: #b9c5d8;
             font-size: 14px;
         }
 
-
-        /* =========================
-           DETAILED SEO
-        ========================= */
-
         .details {
-            background: #0b1728;
+            max-width: 950px;
+            margin: auto;
         }
 
         .detail-box {
-            max-width: 900px;
-
-            margin: 0 auto 25px;
-
-            padding: 30px;
-
-            background: #101f33;
-
-            border-radius: 16px;
-
-            border-left: 4px solid #00e5ff;
+            background: #0d2145;
+            padding: 28px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #00eaff;
         }
 
         .detail-box h3 {
-            color: #00e5ff;
-
-            font-size: 22px;
-
-            margin-bottom: 12px;
+            color: #00eaff;
+            margin-bottom: 10px;
         }
 
         .detail-box p {
             color: #cbd5e1;
-
-            margin-bottom: 10px;
         }
 
         .example {
             margin-top: 15px;
-
             padding: 15px;
-
-            background: #07111f;
-
-            border-radius: 8px;
-
-            color: #dbeafe;
-
-            font-size: 14px;
+            background: #07152f;
+            border-radius: 10px;
+            color: #a5f3fc;
         }
-
-        .example strong {
-            color: #a855f7;
-        }
-
-
-        /* =========================
-           CHECKLIST
-        ========================= */
 
         .checklist {
-            background: #07111f;
-        }
-
-        .checklist-box {
-            max-width: 850px;
-
+            max-width: 800px;
             margin: auto;
-
-            background: #0d1b2e;
-
-            padding: 35px;
-
-            border-radius: 18px;
-
-            border: 1px solid rgba(255,255,255,0.08);
         }
 
-        .checklist-box ul {
-            list-style: none;
+        .check-item {
+            background: #0d2145;
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px solid #203d70;
         }
 
-        .checklist-box li {
-            padding: 14px 0;
-
-            color: #dbeafe;
-
-            border-bottom:
-                1px solid rgba(255,255,255,0.07);
-        }
-
-        .checklist-box li:last-child {
-            border-bottom: none;
-        }
-
-        .checklist-box i {
-            color: #00e5ff;
-
+        .check-item i {
+            color: #00eaff;
             margin-right: 10px;
         }
 
-
-        /* =========================
-           CTA
-        ========================= */
-
-        .cta {
+        .buttons {
             text-align: center;
-
-            background: #0b1728;
+            margin-top: 40px;
         }
 
-        .cta-box {
-            padding: 50px 25px;
-
-            border-radius: 20px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(0,229,255,0.12),
-                    rgba(168,85,247,0.12)
-                );
-
-            border: 1px solid rgba(255,255,255,0.1);
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 7px;
+            border-radius: 30px;
+            background: #00eaff;
+            color: #07152f;
+            font-weight: 600;
+            transition: 0.3s;
         }
 
-        .cta-box h2 {
-            font-size: 32px;
-
-            margin-bottom: 12px;
+        .btn:hover {
+            background: #a855f7;
+            color: white;
+            transform: translateY(-3px);
         }
 
-        .cta-box p {
-            max-width: 700px;
-
-            margin: auto;
-
-            color: #cbd5e1;
+        .btn-outline {
+            background: transparent;
+            color: #00eaff;
+            border: 1px solid #00eaff;
         }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
 
         footer {
-            background: #040b14;
-
-            padding: 30px 0;
-
             text-align: center;
-
+            padding: 25px;
+            background: #040d20;
             color: #94a3b8;
-
-            font-size: 14px;
         }
 
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
-
         @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
             .nav-links {
                 gap: 12px;
             }
 
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .seo-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
 
+        @media (max-width: 650px) {
 
-        @media (max-width: 600px) {
-
-            nav {
+            .nav-container {
                 flex-direction: column;
-
-                padding: 18px 0;
-
                 gap: 15px;
             }
 
             .nav-links {
                 flex-wrap: wrap;
-
                 justify-content: center;
             }
 
-            .hero {
-                padding: 70px 15px;
-            }
-
             .hero h1 {
-                font-size: 34px;
+                font-size: 36px;
             }
 
-            .seo-grid {
+            .cards {
                 grid-template-columns: 1fr;
             }
 
-            .section-title h2 {
-                font-size: 28px;
-            }
-
-            .intro-box,
-            .detail-box,
-            .checklist-box {
-                padding: 25px;
-            }
         }
 
     </style>
@@ -543,786 +312,484 @@
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+    <!-- Navbar -->
 
-<header>
+    <nav class="navbar">
 
-    <div class="container">
+        <div class="nav-container">
 
-        <nav>
-
-            <a href="index.html" class="logo">
-                Anjali <span>DigitalScope</span>
-            </a>
-
+            <div class="logo">
+                Anjali DigitalScope
+            </div>
 
             <ul class="nav-links">
 
                 <li>
-                    <a href="index.html">
-                        Home
-                    </a>
+                    <a href="index.html">Home</a>
                 </li>
 
                 <li>
-                    <a href="about.html">
-                        About
-                    </a>
+                    <a href="about.html">About</a>
                 </li>
 
                 <li>
-                    <a href="on-page-seo.html">
-                        On-Page SEO
-                    </a>
+                    <a href="on-page-seo.html">On-Page SEO</a>
                 </li>
 
                 <li>
-                    <a href="index.html#skills">
-                        Skills
-                    </a>
+                    <a href="index.html#skills">Skills</a>
                 </li>
 
                 <li>
-                    <a href="index.html#blog">
-                        Blog
-                    </a>
+                    <a href="index.html#blog">Blog</a>
                 </li>
 
                 <li>
-                    <a href="index.html#projects">
-                        Projects
-                    </a>
+                    <a href="index.html#faq">FAQ</a>
                 </li>
 
                 <li>
-                    <a href="index.html#contact">
-                        Contact
-                    </a>
+                    <a href="index.html#contact">Contact</a>
                 </li>
 
             </ul>
 
-        </nav>
+        </div>
 
-    </div>
-
-</header>
+    </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+    <!-- Hero -->
 
-<section class="hero">
+    <section class="hero">
 
-    <div class="container">
+        <div class="hero-content">
 
-        <i class="fas fa-magnifying-glass-chart hero-icon"></i>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
 
-        <h1>
-            Learn <span>On-Page SEO</span>
-        </h1>
+            <h1>Learn On-Page SEO</h1>
 
-        <p>
-            Understand the important elements of On-Page SEO,
-            including keyword research, title tags, meta descriptions,
-            headings, URLs, internal linking, image SEO,
-            content optimization and search intent.
-        </p>
+            <p>
+                A beginner-friendly guide to understanding important
+                On-Page SEO elements and website optimization.
+            </p>
 
-        <a href="#seo-elements" class="btn">
-            Explore SEO Elements
-        </a>
+        </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     WHAT IS ON PAGE SEO
-========================= -->
+    <!-- Introduction -->
 
-<section class="intro">
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                What is <span>On-Page SEO?</span>
-            </h2>
+            <h2>What is On-Page SEO?</h2>
 
-            <p>
-                Understanding the basics of webpage optimization
-            </p>
+            <p>Understanding the basics</p>
 
         </div>
 
 
-        <div class="intro-box">
+        <div class="intro">
 
             <p>
-                On-Page SEO refers to optimizing the content and
-                elements present on a webpage so that users can
-                understand the content easily and search engines
-                can better interpret the page.
+                On-Page SEO refers to optimizing the content and elements
+                present on a webpage. The purpose is to make the page
+                useful, understandable and easy to navigate for users
+                and search engines.
             </p>
 
             <p>
-                It includes different elements such as keywords,
-                title tags, meta descriptions, headings, URLs,
-                internal links, images and content structure.
-            </p>
-
-            <p>
-                Good On-Page SEO focuses on creating useful,
-                relevant and well-organized content that addresses
-                the user's search intent.
-            </p>
-
-            <p>
-                As an SEO Intern, I am learning and practicing these
-                elements to understand how webpage optimization works
-                in real projects.
+                Important On-Page SEO elements include keyword research,
+                title tags, meta descriptions, headings, URLs, internal
+                links, images, content and search intent.
             </p>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     SEO ELEMENTS
-========================= -->
+    <!-- SEO Elements -->
 
-<section id="seo-elements">
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                Important <span>On-Page SEO Elements</span>
-            </h2>
+            <h2>Important On-Page SEO Elements</h2>
 
-            <p>
-                Key areas I am learning and practicing
-            </p>
+            <p>Key areas to focus on</p>
 
         </div>
 
 
-        <div class="seo-grid">
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-key"></i>
+                <h3>Keyword Research</h3>
+                <p>
+                    Find relevant search terms related to your topic.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-heading"></i>
+                <h3>Title Tag</h3>
+                <p>
+                    Create a clear and relevant title for the webpage.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-lines"></i>
+                <h3>Meta Description</h3>
+                <p>
+                    Write a useful summary that describes the page.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>H1, H2 & H3</h3>
+                <p>
+                    Organize webpage content using proper headings.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-link"></i>
+                <h3>SEO-Friendly URLs</h3>
+                <p>
+                    Use simple and readable URLs.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3>Internal Linking</h3>
+                <p>
+                    Connect relevant pages within your website.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-image"></i>
+                <h3>Image SEO</h3>
+                <p>
+                    Optimize image file names and descriptive alt text.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Content Optimization</h3>
+                <p>
+                    Create useful and readable content.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Search Intent</h3>
+                <p>
+                    Understand what users are looking for when they search.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
 
-            <!-- KEYWORD -->
+    <!-- Detailed Guide -->
 
-            <div class="seo-card">
+    <section>
 
-                <i class="fas fa-key"></i>
+        <div class="section-title">
 
-                <h3>
-                    Keyword Research
-                </h3>
+            <h2>On-Page SEO Guide</h2>
+
+            <p>Learn each element step by step</p>
+
+        </div>
+
+
+        <div class="details">
+
+
+            <div class="detail-box">
+
+                <h3>1. Keyword Research</h3>
 
                 <p>
-                    Finding relevant keywords that match the topic
-                    of a webpage and understanding what users are
-                    searching for.
+                    Keyword research helps identify the words and phrases
+                    people use when searching for information online.
                 </p>
+
+                <div class="example">
+                    Example: If your topic is On-Page SEO,
+                    related keywords can include "On-Page SEO techniques"
+                    and "On-Page SEO checklist".
+                </div>
 
             </div>
 
 
-            <!-- TITLE -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-tag"></i>
-
-                <h3>
-                    Title Tag
-                </h3>
+                <h3>2. Title Tag</h3>
 
                 <p>
-                    Creating a clear and relevant title that
-                    describes the main topic of a webpage.
+                    The title tag describes the main topic of a webpage.
+                    It should be clear, relevant and useful to users.
                 </p>
+
+                <div class="example">
+                    Example: On-Page SEO Guide for Beginners
+                </div>
 
             </div>
 
 
-            <!-- META -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-file-lines"></i>
-
-                <h3>
-                    Meta Description
-                </h3>
+                <h3>3. Meta Description</h3>
 
                 <p>
-                    Writing a useful summary of the webpage content
-                    that helps users understand what the page is about.
+                    A meta description provides a short summary of the
+                    webpage content.
                 </p>
+
+                <div class="example">
+                    Example: Learn the basics of On-Page SEO,
+                    including keywords, headings, internal linking and
+                    content optimization.
+                </div>
 
             </div>
 
 
-            <!-- HEADINGS -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-heading"></i>
-
-                <h3>
-                    H1, H2 & H3
-                </h3>
+                <h3>4. Heading Structure</h3>
 
                 <p>
-                    Using headings to organize content into a clear
-                    and logical structure.
+                    Use H1 for the main page topic and H2/H3 headings
+                    to organize different sections of the content.
                 </p>
+
+                <div class="example">
+                    H1 → On-Page SEO Guide<br>
+                    H2 → Keyword Research<br>
+                    H2 → Title Tag<br>
+                    H3 → Keyword Placement
+                </div>
 
             </div>
 
 
-            <!-- URL -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-link"></i>
-
-                <h3>
-                    SEO-Friendly URLs
-                </h3>
+                <h3>5. SEO-Friendly URL</h3>
 
                 <p>
-                    Creating readable and descriptive URLs that
-                    communicate the topic of a webpage.
+                    URLs should be simple, readable and related to the
+                    page topic.
                 </p>
+
+                <div class="example">
+                    Good: example.com/on-page-seo-guide
+                </div>
 
             </div>
 
 
-            <!-- INTERNAL LINK -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-diagram-project"></i>
-
-                <h3>
-                    Internal Linking
-                </h3>
+                <h3>6. Internal Linking</h3>
 
                 <p>
-                    Linking related pages within the same website
-                    to improve navigation and content discovery.
+                    Internal links connect one page of a website to
+                    another relevant page on the same website.
                 </p>
+
+                <div class="example">
+                    Example: Link your SEO blog article to your
+                    On-Page SEO guide.
+                </div>
 
             </div>
 
 
-            <!-- IMAGE -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-image"></i>
-
-                <h3>
-                    Image SEO
-                </h3>
+                <h3>7. Image SEO</h3>
 
                 <p>
-                    Optimizing images with descriptive file names,
+                    Images can be optimized using descriptive file names,
                     suitable formats and meaningful alt text.
                 </p>
 
+                <div class="example">
+                    Example Alt Text:
+                    "On-Page SEO checklist for beginners"
+                </div>
+
             </div>
 
 
-            <!-- CONTENT -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-pen"></i>
-
-                <h3>
-                    Content Optimization
-                </h3>
+                <h3>8. Content Optimization</h3>
 
                 <p>
-                    Creating useful, relevant and well-structured
-                    content that provides value to the user.
+                    Content should be useful, readable, organized and
+                    relevant to the topic and search intent.
                 </p>
 
             </div>
 
 
-            <!-- SEARCH INTENT -->
+            <div class="detail-box">
 
-            <div class="seo-card">
-
-                <i class="fas fa-user-check"></i>
-
-                <h3>
-                    Search Intent
-                </h3>
+                <h3>9. Search Intent</h3>
 
                 <p>
-                    Understanding the reason behind a user's search
-                    and creating content that addresses that need.
+                    Search intent means understanding the reason behind
+                    a user's search query and creating content that
+                    addresses that need.
                 </p>
 
             </div>
 
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     DETAILED SEO
-========================= -->
+    <!-- Checklist -->
 
-<section class="details">
-
-    <div class="container">
+    <section>
 
         <div class="section-title">
 
-            <h2>
-                On-Page SEO <span>In Detail</span>
-            </h2>
+            <h2>On-Page SEO Checklist</h2>
 
-            <p>
-                Simple examples of important SEO elements
-            </p>
+            <p>Things to check before publishing a page</p>
 
         </div>
 
 
-        <!-- KEYWORD RESEARCH -->
+        <div class="checklist">
 
-        <div class="detail-box">
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Clear and relevant title tag
+            </div>
 
-            <h3>
-                1. Keyword Research
-            </h3>
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Useful meta description
+            </div>
 
-            <p>
-                Keyword research helps identify the words and phrases
-                people use when searching for information, products
-                or services.
-            </p>
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                One clear primary H1
+            </div>
 
-            <div class="example">
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Proper H2 and H3 structure
+            </div>
 
-                <strong>Example:</strong>
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Natural keyword usage
+            </div>
 
-                If your page is about online medicine delivery in Jaipur,
-                a relevant keyword could be
-                <strong>"online medicine delivery Jaipur"</strong>.
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Search intent match
+            </div>
 
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Readable URL
+            </div>
+
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Relevant internal links
+            </div>
+
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Descriptive image alt text
+            </div>
+
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Useful and readable content
+            </div>
+
+            <div class="check-item">
+                <i class="fa-solid fa-check"></i>
+                Easy website navigation
             </div>
 
         </div>
 
 
-        <!-- TITLE TAG -->
-
-        <div class="detail-box">
-
-            <h3>
-                2. Title Tag
-            </h3>
-
-            <p>
-                The title tag describes the main topic of a webpage.
-                It should be clear, relevant and useful to the user.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong>
-
-                Online Medicine Delivery in Jaipur | Direct Dawai
-
-            </div>
-
-        </div>
-
-
-        <!-- META DESCRIPTION -->
-
-        <div class="detail-box">
-
-            <h3>
-                3. Meta Description
-            </h3>
-
-            <p>
-                A meta description provides a short summary of the
-                webpage content.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong>
-
-                Order medicines online in Jaipur with convenient
-                delivery and explore a wide range of healthcare products.
-
-            </div>
-
-        </div>
-
-
-        <!-- HEADINGS -->
-
-        <div class="detail-box">
-
-            <h3>
-                4. Heading Structure
-            </h3>
-
-            <p>
-                Headings help divide webpage content into meaningful
-                sections and make the content easier to scan.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong><br><br>
-
-                H1 → Online Medicine Delivery in Jaipur<br>
-
-                H2 → Why Choose Online Medicine Delivery?<br>
-
-                H2 → How to Order Medicines Online?<br>
-
-                H3 → Steps to Place an Order
-
-            </div>
-
-        </div>
-
-
-        <!-- URL -->
-
-        <div class="detail-box">
-
-            <h3>
-                5. SEO-Friendly URL
-            </h3>
-
-            <p>
-                A descriptive URL helps communicate the topic of
-                the webpage in a simple and readable format.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong><br><br>
-
-                Good:
-                example.com/online-medicine-delivery-jaipur
-
-                <br><br>
-
-                Avoid:
-                example.com/page?id=12345
-
-            </div>
-
-        </div>
-
-
-        <!-- INTERNAL LINKING -->
-
-        <div class="detail-box">
-
-            <h3>
-                6. Internal Linking
-            </h3>
-
-            <p>
-                Internal links connect one page of a website to
-                another relevant page on the same website.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong>
-
-                An SEO article about keyword research can link to
-                another relevant page about On-Page SEO.
-
-            </div>
-
-        </div>
-
-
-        <!-- IMAGE SEO -->
-
-        <div class="detail-box">
-
-            <h3>
-                7. Image SEO
-            </h3>
-
-            <p>
-                Images can be optimized by using descriptive file
-                names, suitable image formats and meaningful alt text.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong><br><br>
-
-                File name:
-                online-medicine-delivery-jaipur.jpg
-
-                <br><br>
-
-                Alt text:
-                Online medicine delivery service in Jaipur
-
-            </div>
-
-        </div>
-
-
-        <!-- CONTENT -->
-
-        <div class="detail-box">
-
-            <h3>
-                8. Content Optimization
-            </h3>
-
-            <p>
-                Content should be useful, relevant, readable and
-                organized around the user's needs.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong>
-
-                Use relevant keywords naturally while keeping the
-                content useful and easy to read.
-
-            </div>
-
-        </div>
-
-
-        <!-- SEARCH INTENT -->
-
-        <div class="detail-box">
-
-            <h3>
-                9. Search Intent
-            </h3>
-
-            <p>
-                Search intent refers to the reason behind a user's
-                search query.
-            </p>
-
-            <div class="example">
-
-                <strong>Example:</strong>
-
-                A person searching "what is On-Page SEO" is likely
-                looking for information, while someone searching
-                "SEO course near me" may be looking for a service
-                or course.
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CHECKLIST
-========================= -->
-
-<section class="checklist">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>
-                On-Page SEO <span>Checklist</span>
-            </h2>
-
-            <p>
-                Basic elements to check before publishing a webpage
-            </p>
-
-        </div>
-
-
-        <div class="checklist-box">
-
-            <ul>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Page has a clear and relevant title tag
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Meta description accurately describes the page
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Page has a clear primary H1 heading
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    H2 and H3 headings organize the content
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Primary keyword is used naturally
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Content matches the user's search intent
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    URLs are readable and descriptive
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Relevant internal links are added
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Images have descriptive alt text
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Content is useful, readable and well structured
-                </li>
-
-                <li>
-                    <i class="fas fa-check"></i>
-                    Page is easy for users to navigate
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <div class="cta-box">
-
-            <h2>
-                Explore My SEO Journey
-            </h2>
-
-            <p>
-                Want to know more about my SEO learning journey,
-                skills and projects? Visit my About page.
-            </p>
+        <div class="buttons">
 
             <a href="about.html" class="btn">
                 About Me
             </a>
 
-            <a href="index.html" class="btn">
+            <a href="index.html" class="btn btn-outline">
                 Back to Home
             </a>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+    <!-- Footer -->
 
-<footer>
-
-    <div class="container">
+    <footer>
 
         <p>
             © 2026 Anjali DigitalScope. All Rights Reserved.
         </p>
 
-    </div>
-
-</footer>
+    </footer>
 
 
-<!-- =========================
-     STRUCTURED DATA
-========================= -->
+    <!-- Article Schema -->
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "On-Page SEO Guide",
-    "description": "A beginner-friendly guide to On-Page SEO covering keyword research, title tags, meta descriptions, headings, URLs, internal linking, image SEO and content optimization.",
-    "author": {
-        "@type": "Person",
-        "name": "Anjali"
-    },
-    "publisher": {
-        "@type": "Person",
-        "name": "Anjali DigitalScope"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://yourdomain.com/on-page-seo.html"
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "On-Page SEO Guide",
+        "author": {
+            "@type": "Person",
+            "name": "Anjali"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Anjali DigitalScope"
+        },
+        "mainEntityOfPage": "https://yourdomain.com/on-page-seo.html"
     }
-}
 
-</script>
+    </script>
 
 
 </body>
