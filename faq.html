@@ -6,8 +6,10 @@
 
     <title>SEO FAQ | Anjali DigitalScope</title>
 
-    <meta name="description" content="Frequently asked questions about SEO, On-Page SEO, keyword research, meta tags, internal linking, image SEO and content optimization.">
-    <meta name="keywords" content="SEO FAQ, On-Page SEO FAQ, SEO questions, keyword research, meta tags, internal linking, image SEO">
+    <meta name="description" content="Find answers to common SEO questions about On-Page SEO, keyword research, title tags, meta descriptions, headings, internal linking, image SEO and content optimization.">
+
+    <meta name="keywords" content="SEO FAQ, On-Page SEO FAQ, SEO questions, keyword research, title tags, meta descriptions, internal linking, image SEO">
+
     <meta name="author" content="Anjali">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#07152f">
@@ -21,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -40,15 +43,968 @@
             color: inherit;
         }
 
-        /* NAVBAR */
+        /* ================= NAVBAR ================= */
+
         nav {
             width: 100%;
             padding: 18px 8%;
-            background: rgba(7, 21, 47, 0.95);
+            background: rgba(7, 21, 47, 0.97);
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(0, 255, 255, 0.15
+            border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #00ffff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00ffff;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 55vh;
+            padding: 90px 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background:
+                radial-gradient(circle at top left, rgba(0,255,255,0.12), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(155,89,255,0.15), transparent 35%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00ffff, #9b59ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .hero p {
+            color: #c9d4ea;
+            font-size: 17px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ================= GENERAL ================= */
+
+        .section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+            color: #00ffff;
+        }
+
+        .section-title p {
+            color: #aebbd3;
+        }
+
+        /* ================= FAQ ================= */
+
+        .faq-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .faq-item {
+            margin-bottom: 18px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.04);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 22px 25px;
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .faq-question i {
+            color: #00ffff;
+            transition: 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 25px 22px;
+            color: #b9c7df;
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 250px;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* ================= SEO TOPICS ================= */
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .topic-card {
+            padding: 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(155, 89, 255, 0.25);
+            border-radius: 18px;
+            transition: 0.3s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-8px);
+            border-color: #9b59ff;
+        }
+
+        .topic-card i {
+            font-size: 35px;
+            color: #00ffff;
+            margin-bottom: 18px;
+        }
+
+        .topic-card h3 {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        .topic-card p {
+            color: #aebbd3;
+            font-size: 14px;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            padding: 80px 8%;
+            text-align: center;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0,255,255,0.08),
+                    rgba(155,89,255,0.10)
+                );
+        }
+
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #b8c5dc;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            margin: 6px;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #00ffff, #9b59ff);
+            color: #07152f;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #00ffff;
+            border: 1px solid #00ffff;
+        }
+
+        .btn-outline:hover {
+            background: #00ffff;
+            color: #07152f;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            padding: 35px 8%;
+            text-align: center;
+            border-top: 1px solid rgba(0, 255, 255, 0.12);
+            background: #050f24;
+        }
+
+        footer .footer-logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #8998b2;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            margin: 18px 0;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            margin: 5px;
+            border: 1px solid rgba(0,255,255,0.3);
+            border-radius: 50%;
+            color: #00ffff;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #00ffff;
+            color: #07152f;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .topics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 70px 6%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .section {
+                padding: 60px 6%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .topics {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-question {
+                font-size: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            Anjali DigitalScope
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="on-page-seo.html">On-Page SEO</a>
+
+            <a href="skills.html">Skills</a>
+
+            <a href="blog.html">Blog</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Frequently Asked Questions</h1>
+
+            <h2>SEO & On-Page SEO FAQ</h2>
+
+            <p>
+                Explore simple answers to common questions about SEO,
+                On-Page SEO, keyword research, content optimization,
+                meta tags, headings, internal linking and more.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ SECTION ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>SEO Questions & Answers</h2>
+
+            <p>
+                Learn the basics of SEO through easy-to-understand answers.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <!-- FAQ 1 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is SEO?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        SEO stands for Search Engine Optimization.
+                        It is the process of improving a website so that
+                        search engines can better understand its content
+                        and users can discover it through search results.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is On-Page SEO?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        On-Page SEO refers to optimizing elements on a
+                        webpage, such as title tags, meta descriptions,
+                        headings, URLs, content, images and internal links.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is keyword research?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Keyword research is the process of finding words
+                        and phrases that people use when searching for
+                        information, products or services online.
+                        These keywords can help guide content optimization.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is a title tag?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        A title tag is an HTML element that describes the
+                        main topic of a webpage. It can appear as the
+                        clickable title of a page in search engine results
+                        and also helps search engines understand the page.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 5 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is a meta description?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        A meta description is a short summary of a webpage.
+                        Search engines may display it below the page title
+                        in search results. A clear description can help
+                        users understand what the page is about.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 6 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Why are H1, H2 and H3 headings important?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Headings organize webpage content into a clear
+                        structure. H1 generally represents the main heading,
+                        while H2 and H3 can organize supporting sections
+                        and subsections.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 7 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is internal linking?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Internal linking means linking one page of a website
+                        to another page on the same website. It can help
+                        users navigate the site and help search engines
+                        discover and understand related pages.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 8 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is image SEO?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Image SEO involves optimizing images for websites.
+                        Common practices include descriptive file names,
+                        useful alt text, appropriate image dimensions and
+                        optimized file sizes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 9 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Why is content optimization important?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Content optimization helps make webpage content
+                        useful, clear, relevant and easy to understand.
+                        It can also help search engines identify the
+                        topic and purpose of a page.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 10 -->
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is search intent?
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Search intent refers to the reason behind a user's
+                        search query. Understanding search intent helps
+                        content creators develop pages that address what
+                        users are actually looking for.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEO TOPICS ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Explore SEO Topics</h2>
+
+            <p>
+                Learn more about important areas of SEO.
+            </p>
+
+        </div>
+
+
+        <div class="topics">
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <h3>Keyword Research</h3>
+
+                <p>
+                    Learn how keywords help you understand what users
+                    search for online.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-heading"></i>
+
+                <h3>Heading Optimization</h3>
+
+                <p>
+                    Understand how H1, H2 and H3 headings organize
+                    webpage content.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-link"></i>
+
+                <h3>Internal Linking</h3>
+
+                <p>
+                    Learn how internal links connect related pages
+                    within a website.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-image"></i>
+
+                <h3>Image SEO</h3>
+
+                <p>
+                    Discover basic techniques for optimizing website
+                    images.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h3>Content SEO</h3>
+
+                <p>
+                    Learn how to create useful and search-friendly
+                    website content.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>SEO Analysis</h3>
+
+                <p>
+                    Understand basic SEO analysis and website
+                    optimization practices.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <h2>Want to Learn More About SEO?</h2>
+
+        <p>
+            Explore my On-Page SEO guide and learn about important
+            SEO elements in a simple and beginner-friendly way.
+        </p>
+
+        <a href="on-page-seo.html" class="btn">
+            <i class="fa-solid fa-book-open"></i>
+            Explore On-Page SEO
+        </a>
+
+        <a href="blog.html" class="btn btn-outline">
+            <i class="fa-solid fa-blog"></i>
+            Visit SEO Blog
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Anjali DigitalScope
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Anjali DigitalScope. All Rights Reserved.
+        </p>
+
+        <p>
+            SEO Intern | On-Page SEO Learner
+        </p>
+
+    </footer>
+
+
+    <!-- ================= FAQ JAVASCRIPT ================= -->
+
+    <script>
+
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(question => {
+
+            question.addEventListener("click", () => {
+
+                const currentItem = question.parentElement;
+
+                document.querySelectorAll(".faq-item").forEach(item => {
+
+                    if (item !== currentItem) {
+                        item.classList.remove("active");
+                    }
+
+                });
+
+                currentItem.classList.toggle("active");
+
+            });
+
+        });
+
+    </script>
+
+
+    <!-- ================= FAQ SCHEMA ================= -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SEO stands for Search Engine Optimization. It is the process of improving a website so that search engines can better understand its content and users can discover it through search results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is On-Page SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "On-Page SEO refers to optimizing elements on a webpage, such as title tags, meta descriptions, headings, URLs, content, images and internal links."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is keyword research?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Keyword research is the process of finding words and phrases that people use when searching for information, products or services online."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a title tag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A title tag is an HTML element that describes the main topic of a webpage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a meta description?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A meta description is a short summary of a webpage that search engines may display below the page title in search results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why are H1, H2 and H3 headings important?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Headings organize webpage content into a clear structure. H1 generally represents the main heading, while H2 and H3 organize supporting sections and subsections."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is internal linking?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Internal linking means linking one page of a website to another page on the same website."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is image SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Image SEO involves optimizing images for websites using descriptive file names, useful alt text, appropriate dimensions and optimized file sizes."
+                }
+            }
+        ]
+    }
+
+    </script>
+
+</body>
+</html>
