@@ -1,27 +1,30 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
+    <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://digital-anjali.vercel.app/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "On-Page SEO",
-      "item": "https://digital-anjali.vercel.app/on-page-seo.html"
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digital-anjali.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "On-Page SEO",
+          "item": "https://digital-anjali.vercel.app/on-page-seo.html"
+        }
+      ]
     }
-  ]
-}
-</script>
+    </script>
 
     <meta charset="UTF-8">
 
@@ -39,10 +42,10 @@
 
     <meta name="theme-color" content="#07152f">
 
-    <link rel="canonical" href="https://yourdomain.com/on-page-seo.html">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://digital-anjali.vercel.app/on-page-seo.html">
 
     <!-- Google Font -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,33 +53,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
     <style>
+
+        /* Breadcrumb */
         .breadcrumb {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 14px;
-}
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 7%;
+            font-size: 14px;
+            background: #07152f;
+        }
 
-.breadcrumb a {
-    color: #6c63ff;
-    text-decoration: none;
-    font-weight: 500;
-}
+        .breadcrumb a {
+            color: #00eaff;
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-.breadcrumb span {
-    margin: 0 8px;
-    color: #777;
-}
+        .breadcrumb a:hover {
+            color: #a855f7;
+        }
 
-.breadcrumb span:last-child {
-    color: #333;
-    font-weight: 600;
-}
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #777;
+        }
+
+        .breadcrumb span:last-child {
+            color: #cbd5e1;
+            font-weight: 600;
+        }
 
         * {
             margin: 0;
@@ -86,11 +94,6 @@
         }
 
         body {
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="index.html">Home</a>
-    <span>›</span>
-    <span>On-Page SEO</span>
-</nav>
             font-family: 'Poppins', sans-serif;
             background: #07152f;
             color: #ffffff;
@@ -102,6 +105,7 @@
             color: inherit;
         }
 
+        /* Navbar */
         .navbar {
             position: sticky;
             top: 0;
@@ -138,6 +142,7 @@
             color: #00eaff;
         }
 
+        /* Hero */
         .hero {
             min-height: 55vh;
             display: flex;
@@ -317,6 +322,7 @@
             color: #94a3b8;
         }
 
+        /* Responsive */
         @media (max-width: 900px) {
 
             .cards {
@@ -349,6 +355,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .breadcrumb {
+                padding: 12px 5%;
+            }
+
         }
 
     </style>
@@ -357,6 +367,13 @@
 
 
 <body>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>On-Page SEO</span>
+    </nav>
 
 
     <!-- Navbar -->
@@ -833,7 +850,7 @@
             "@type": "Person",
             "name": "Anjali DigitalScope"
         },
-        "mainEntityOfPage": "https://yourdomain.com/on-page-seo.html"
+        "mainEntityOfPage": "https://digital-anjali.vercel.app/on-page-seo.html"
     }
 
     </script>
@@ -842,3 +859,4 @@
 </body>
 
 </html>
+```
