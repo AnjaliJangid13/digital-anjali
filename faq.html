@@ -16,6 +16,55 @@
 
     <link rel="canonical" href="https://yourusername.github.io/Anjali-DigitalScope/faq.html">
 
+
+    <!-- ================= BREADCRUMB SCHEMA ================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://digital-anjali.vercel.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://digital-anjali.vercel.app/about.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "On-Page SEO",
+                "item": "https://digital-anjali.vercel.app/on-page-seo.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Skills",
+                "item": "https://digital-anjali.vercel.app/skills.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Blog",
+                "item": "https://digital-anjali.vercel.app/blog.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "FAQ",
+                "item": "https://digital-anjali.vercel.app/faq.html"
+            }
+        ]
+    }
+    </script>
+
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -42,6 +91,39 @@
             text-decoration: none;
             color: inherit;
         }
+
+
+        /* ================= BREADCRUMB ================= */
+
+        .breadcrumb {
+            width: 100%;
+            padding: 14px 8%;
+            background: #07152f;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.08);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .breadcrumb a {
+            color: #00ffff;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: #9b59ff;
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #6f7d96;
+        }
+
+        .breadcrumb .current {
+            color: #c9d4ea;
+            font-weight: 600;
+        }
+
 
         /* ================= NAVBAR ================= */
 
@@ -80,6 +162,7 @@
         .nav-links a:hover {
             color: #00ffff;
         }
+
 
         /* ================= HERO ================= */
 
@@ -122,6 +205,7 @@
             margin: auto;
         }
 
+
         /* ================= GENERAL ================= */
 
         .section {
@@ -142,6 +226,7 @@
         .section-title p {
             color: #aebbd3;
         }
+
 
         /* ================= FAQ ================= */
 
@@ -205,6 +290,7 @@
             transform: rotate(180deg);
         }
 
+
         /* ================= SEO TOPICS ================= */
 
         .topics {
@@ -244,6 +330,7 @@
             color: #aebbd3;
             font-size: 14px;
         }
+
 
         /* ================= CTA ================= */
 
@@ -296,6 +383,7 @@
             color: #07152f;
         }
 
+
         /* ================= FOOTER ================= */
 
         footer {
@@ -339,6 +427,7 @@
             color: #07152f;
         }
 
+
         /* ================= RESPONSIVE ================= */
 
         @media (max-width: 900px) {
@@ -366,6 +455,10 @@
             .nav-links {
                 flex-wrap: wrap;
                 justify-content: center;
+            }
+
+            .breadcrumb {
+                padding: 12px 6%;
             }
 
             .hero {
@@ -401,6 +494,48 @@
 </head>
 
 <body>
+
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <span>›</span>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <span>›</span>
+
+        <a href="on-page-seo.html">
+            On-Page SEO
+        </a>
+
+        <span>›</span>
+
+        <a href="skills.html">
+            Skills
+        </a>
+
+        <span>›</span>
+
+        <a href="blog.html">
+            Blog
+        </a>
+
+        <span>›</span>
+
+        <span class="current">
+            FAQ
+        </span>
+
+    </nav>
+
 
     <!-- ================= NAVBAR ================= -->
 
