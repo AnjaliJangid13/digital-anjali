@@ -22,6 +22,48 @@
     <link rel="canonical" href="https://yourdomain.com/blog.html">
 
 
+    <!-- ================= BREADCRUMB SCHEMA ================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://digital-anjali.vercel.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://digital-anjali.vercel.app/about.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "On-Page SEO",
+                "item": "https://digital-anjali.vercel.app/on-page-seo.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Skills",
+                "item": "https://digital-anjali.vercel.app/skills.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Blog",
+                "item": "https://digital-anjali.vercel.app/blog.html"
+            }
+        ]
+    }
+    </script>
+
+
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +99,41 @@
         a {
             text-decoration: none;
             color: inherit;
+        }
+
+
+        /* ================= BREADCRUMB ================= */
+
+        .breadcrumb {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 7%;
+            font-size: 14px;
+            background: #07152f;
+        }
+
+
+        .breadcrumb a {
+            color: #00eaff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+
+        .breadcrumb a:hover {
+            color: #a855f7;
+        }
+
+
+        .breadcrumb span {
+            margin: 0 8px;
+            color: #777;
+        }
+
+
+        .breadcrumb span:last-child {
+            color: #cbd5e1;
+            font-weight: 600;
         }
 
 
@@ -506,6 +583,12 @@
                 padding: 25px;
             }
 
+
+            .breadcrumb {
+                padding: 12px 5%;
+                line-height: 2;
+            }
+
         }
 
     </style>
@@ -514,6 +597,42 @@
 
 
 <body>
+
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <span>›</span>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <span>›</span>
+
+        <a href="on-page-seo.html">
+            On-Page SEO
+        </a>
+
+        <span>›</span>
+
+        <a href="skills.html">
+            Skills
+        </a>
+
+        <span>›</span>
+
+        <span>
+            Blog
+        </span>
+
+    </nav>
+
 
 
     <!-- ================= NAVBAR ================= -->
