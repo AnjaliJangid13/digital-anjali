@@ -96,12 +96,16 @@
         /* ================= BREADCRUMB ================= */
 
         .breadcrumb {
-            width: 100%;
-            padding: 14px 8%;
+            width: min(980px, 84%);
+            margin: 0 auto;
+            padding: 14px 0;
             background: #07152f;
-            border-bottom: 1px solid rgba(0, 255, 255, 0.08);
             font-size: 14px;
             line-height: 1.8;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0;
         }
 
         .breadcrumb a {
@@ -458,7 +462,8 @@
             }
 
             .breadcrumb {
-                padding: 12px 6%;
+                width: 88%;
+                padding: 12px 0;
             }
 
             .hero {
@@ -500,39 +505,27 @@
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
 
-        <a href="index.html">
-            Home
-        </a>
+        <a href="index.html">Home</a>
 
         <span>›</span>
 
-        <a href="about.html">
-            About
-        </a>
+        <a href="about.html">About</a>
 
         <span>›</span>
 
-        <a href="on-page-seo.html">
-            On-Page SEO
-        </a>
+        <a href="on-page-seo.html">On-Page SEO</a>
 
         <span>›</span>
 
-        <a href="skills.html">
-            Skills
-        </a>
+        <a href="skills.html">Skills</a>
 
         <span>›</span>
 
-        <a href="blog.html">
-            Blog
-        </a>
+        <a href="blog.html">Blog</a>
 
         <span>›</span>
 
-        <span class="current">
-            FAQ
-        </span>
+        <span class="current">FAQ</span>
 
     </nav>
 
