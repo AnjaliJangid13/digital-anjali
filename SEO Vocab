@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SEO Vocabulary | Digital Anjali</title>
+
+    <meta name="description"
+        content="Learn important SEO vocabulary and terminology including SEO, keywords, meta titles, meta descriptions, backlinks, internal linking, SERP, sitemap, robots.txt and more.">
+
+    <meta name="keywords"
+        content="SEO vocabulary, SEO terms, SEO terminology, digital marketing vocabulary, SEO glossary, on page SEO terms, SEO basics">
+
+    <link rel="canonical" href="https://digital-anjali.vercel.app/seo-vocabulary.html">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #07152f;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        /* Breadcrumb */
+
+        .breadcrumb {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto 0;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #aaa;
+            margin: 0 8px;
+        }
+
+        /* Navbar */
+
+        nav {
+            width: 90%;
+            max-width: 1200px;
+            margin: 10px auto;
+            padding: 18px 25px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            border: 1px solid rgba(0,255,255,0.2);
+            border-radius: 12px;
+
+            background: rgba(7,21,47,0.95);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00ffff;
+        }
+
+        /* Hero */
+
+        .hero {
+            width: 90%;
+            max-width: 1100px;
+            margin: 70px auto 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            color: #00ffff;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            color: #d5d5d5;
+            font-size: 17px;
+        }
+
+        /* Vocabulary */
+
+        .vocabulary {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto 80px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .term {
+            padding: 25px;
+
+            border: 1px solid rgba(0,255,255,0.25);
+            border-radius: 15px;
+
+            background: rgba(255,255,255,0.03);
+
+            transition: 0.3s;
+        }
+
+        .term:hover {
+            transform: translateY(-5px);
+            border-color: #00ffff;
+        }
+
+        .term h2 {
+            color: #00ffff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .term p {
+            color: #d8d8d8;
+            font-size: 15px;
+        }
+
+        /* CTA */
+
+        .cta {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 80px;
+
+            padding: 40px;
+            text-align: center;
+
+            border-radius: 15px;
+            border: 1px solid rgba(155,89,255,0.4);
+
+            background: rgba(155,89,255,0.08);
+        }
+
+        .cta h2 {
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #d0d0d0;
+            margin-bottom: 20px;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 12px 25px;
+
+            background: #00ffff;
+            color: #07152f;
+
+            text-decoration: none;
+            font-weight: 600;
+
+            border-radius: 8px;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+
+            border-top: 1px solid rgba(0,255,255,0.15);
+
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .vocabulary {
+                grid-template-columns: 1fr;
+            }
+
+            .breadcrumb {
+                font-size: 12px;
+            }
+        }
+
+    </style>
+
+    <!-- Breadcrumb Schema -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://digital-anjali.vercel.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "SEO Vocabulary",
+                "item": "https://digital-anjali.vercel.app/seo-vocabulary.html"
+            }
+        ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Breadcrumb -->
+
+    <div class="breadcrumb">
+        <a href="https://digital-anjali.vercel.app/">
+            Home
+        </a>
+
+        <span>›</span>
+
+        <span>SEO Vocabulary</span>
+    </div>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="https://digital-anjali.vercel.app/" class="logo">
+            Digital Anjali
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="https://digital-anjali.vercel.app/">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="on-page-seo.html">
+                    On-Page SEO
+                </a>
+            </li>
+
+            <li>
+                <a href="skills.html">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="blog.html">
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="faq.html">
+                    FAQ
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>SEO Vocabulary</h1>
+
+        <p>
+            Learn the most important SEO terms and concepts used in
+            search engine optimization and digital marketing. This SEO
+            vocabulary guide explains common terms in simple language.
+        </p>
+
+    </section>
+
+
+    <!-- SEO Terms -->
+
+    <section class="vocabulary">
+
+
+        <div class="term">
+
+            <h2>1. SEO</h2>
+
+            <p>
+                SEO stands for Search Engine Optimization. It is the
+                process of improving a website so that search engines
+                can understand its content and users can discover it
+                through organic search results.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>2. On-Page SEO</h2>
+
+            <p>
+                On-Page SEO refers to optimizing elements present on
+                a webpage, such as content, headings, URLs, title tags,
+                meta descriptions, images and internal links.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>3. Off-Page SEO</h2>
+
+            <p>
+                Off-Page SEO includes activities performed outside a
+                website to improve its visibility and authority.
+                Link building, brand mentions and content promotion
+                are common examples.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>4. Keyword</h2>
+
+            <p>
+                A keyword is a word or phrase that people type into
+                search engines when looking for information, products
+                or services.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>5. Keyword Research</h2>
+
+            <p>
+                Keyword research is the process of finding relevant
+                search terms that can help you understand what your
+                target audience is searching for.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>6. Long-Tail Keyword</h2>
+
+            <p>
+                A long-tail keyword is a more specific search phrase
+                containing several words. These keywords often target
+                a narrower search intent.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>7. Title Tag</h2>
+
+            <p>
+                A title tag is an HTML element that describes the main
+                topic of a webpage. It can appear as the clickable
+                title of a page in search results.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>8. Meta Description</h2>
+
+            <p>
+                A meta description is a short HTML description that
+                summarizes the content of a webpage. Search engines
+                may display it below the page title in search results.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>9. H1 Heading</h2>
+
+            <p>
+                The H1 heading generally represents the main heading
+                of a webpage. It helps users and search engines
+                understand the primary topic of the page.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>10. H2 Heading</h2>
+
+            <p>
+                H2 headings are used for major sections within a page.
+                They make long content easier to scan and organize.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>11. Internal Linking</h2>
+
+            <p>
+                Internal linking means linking one page of a website
+                to another page on the same website. It helps visitors
+                navigate related content and helps search engines
+                discover pages.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>12. Backlink</h2>
+
+            <p>
+                A backlink is a link from another website to your
+                website. Relevant and naturally earned links can help
+                search engines understand the authority and relevance
+                of a website.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>13. Anchor Text</h2>
+
+            <p>
+                Anchor text is the clickable text used for a hyperlink.
+                It gives users and search engines context about the
+                page being linked to.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>14. Alt Text</h2>
+
+            <p>
+                Alt text is an HTML attribute used to describe an
+                image. It can improve accessibility and help search
+                engines understand image content.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>15. Canonical Tag</h2>
+
+            <p>
+                A canonical tag tells search engines which version of
+                a page should generally be treated as the preferred
+                or canonical URL when similar versions exist.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>16. XML Sitemap</h2>
+
+            <p>
+                An XML sitemap is a file that provides search engines
+                with information about important URLs on a website.
+                It can help search engines discover website pages.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>17. Robots.txt</h2>
+
+            <p>
+                Robots.txt is a file that provides instructions to
+                search engine crawlers about which areas of a website
+                they may or may not access.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>18. SERP</h2>
+
+            <p>
+                SERP stands for Search Engine Results Page. It is the
+                page displayed by a search engine after a user enters
+                a search query.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>19. Organic Traffic</h2>
+
+            <p>
+                Organic traffic refers to visitors who reach a website
+                through unpaid search engine results.
+            </p>
+
+        </div>
+
+
+        <div class="term">
+
+            <h2>20. Search Intent</h2>
+
+            <p>
+                Search intent is the reason behind a user's search.
+                Understanding intent helps you create content that
+                matches what people actually want to find.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Want to Learn More About SEO?</h2>
+
+        <p>
+            Explore SEO strategies, on-page optimization,
+            digital marketing concepts and practical SEO resources.
+        </p>
+
+        <a href="https://digital-anjali.vercel.app/">
+            Back to Home
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Digital Anjali | Anjali DigitalScope
+
+    </footer>
+
+
+</body>
+</html>
