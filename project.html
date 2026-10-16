@@ -1,1 +1,997 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>SEO Projects | Anjali DigitalScope</title>
+
+  <meta name="description" content="Explore SEO projects by Anjali DigitalScope, including keyword research, on-page SEO, content optimization, website analysis and internal linking strategies.">
+
+  <meta name="keywords" content="SEO Projects, Anjali DigitalScope, On-Page SEO, Keyword Research, SEO Content Optimization, Website SEO Analysis, Digital Marketing Projects">
+
+  <meta name="author" content="Anjali DigitalScope">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://digital-anjali.vercel.app/projects.html">
+
+  <meta property="og:title" content="SEO Projects | Anjali DigitalScope">
+  <meta property="og:description" content="Explore SEO projects and practical digital marketing work by Anjali DigitalScope.">
+  <meta property="og:url" content="https://digital-anjali.vercel.app/projects.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://digital-anjali.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://digital-anjali.vercel.app/about.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "On-Page SEO",
+        "item": "https://digital-anjali.vercel.app/on-page-seo.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Skills",
+        "item": "https://digital-anjali.vercel.app/skills.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "SEO Vocabulary",
+        "item": "https://digital-anjali.vercel.app/seo-vocab.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Projects",
+        "item": "https://digital-anjali.vercel.app/projects.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --background: #07152f;
+      --background-light: #09152f;
+      --card-background: #0d1d3b;
+      --cyan: #00eaff;
+      --purple: #a855f7;
+      --white: #ffffff;
+      --text: #d8e2f5;
+      --muted: #a7b5d1;
+      --border: rgba(0, 234, 255, 0.18);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--background);
+      color: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Breadcrumb */
+
+    .breadcrumb-wrapper {
+      background: var(--background);
+    }
+
+    .breadcrumb {
+      max-width: 1400px;
+      margin: auto;
+      padding: 15px 7%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: var(--cyan);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--purple);
+    }
+
+    .breadcrumb .separator {
+      color: #71809d;
+    }
+
+    .breadcrumb .current {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    /* Navigation */
+
+    header {
+      width: 100%;
+      background: #07152f;
+      border-bottom: 1px solid rgba(0, 234, 255, 0.16);
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar {
+      max-width: 1400px;
+      margin: auto;
+      padding: 22px 7%;
+      min-height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      color: var(--cyan);
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #f1f4fc;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--cyan);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--cyan);
+      font-size: 25px;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    /* Hero section */
+
+    .projects-hero {
+      min-height: 440px;
+      padding: 65px 7% 75px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(115deg, #09152f 0%, #171044 100%);
+      border-bottom: 1px solid rgba(0, 234, 255, 0.08);
+    }
+
+    .hero-icon {
+      color: var(--cyan);
+      font-size: 58px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .projects-hero h1 {
+      color: var(--white);
+      font-size: clamp(38px, 5vw, 52px);
+      line-height: 1.25;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .projects-hero h2 {
+      color: var(--purple);
+      font-size: clamp(21px, 3vw, 27px);
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .projects-hero p {
+      max-width: 800px;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    /* Project cards section */
+
+    .projects-section {
+      padding: 85px 7%;
+      background: var(--background);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      color: var(--cyan);
+      font-size: clamp(30px, 4vw, 40px);
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--text);
+      max-width: 750px;
+      margin: auto;
+      font-size: 15px;
+    }
+
+    .projects-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px;
+      min-height: 345px;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: linear-gradient(145deg, #0d1d3b, #101537);
+      transition: transform 0.3s ease, border-color 0.3s ease,
+                  box-shadow 0.3s ease;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--cyan);
+      box-shadow: 0 12px 35px rgba(0, 234, 255, 0.08);
+    }
+
+    .project-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .project-icon-box {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cyan);
+      font-size: 26px;
+      border: 1px solid rgba(0, 234, 255, 0.2);
+      border-radius: 14px;
+      background: rgba(0, 234, 255, 0.07);
+      margin-bottom: 22px;
+    }
+
+    .project-number {
+      color: var(--purple);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .project-card h3 {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+
+    .project-card p {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 22px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      margin-bottom: 22px;
+    }
+
+    .project-tags span {
+      display: inline-block;
+      color: var(--cyan);
+      background: rgba(0, 234, 255, 0.07);
+      border: 1px solid rgba(0, 234, 255, 0.16);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--purple);
+      font-size: 14px;
+      font-weight: 700;
+      transition: color 0.3s, gap 0.3s;
+    }
+
+    .project-link:hover {
+      color: var(--cyan);
+      gap: 13px;
+    }
+
+    /* Skills section */
+
+    .skills-section {
+      padding: 75px 7%;
+      background: linear-gradient(115deg, #09152f, #101039);
+    }
+
+    .skills-grid {
+      max-width: 1100px;
+      margin: 35px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .skill-item {
+      padding: 22px 15px;
+      text-align: center;
+      background: rgba(13, 29, 59, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .skill-item:hover {
+      border-color: var(--purple);
+      transform: translateY(-4px);
+    }
+
+    .skill-item i {
+      display: block;
+      color: var(--cyan);
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .skill-item h3 {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* Call to action */
+
+    .contact-cta {
+      padding: 75px 7%;
+      text-align: center;
+      background: var(--background);
+    }
+
+    .contact-cta h2 {
+      color: var(--cyan);
+      font-size: clamp(27px, 4vw, 36px);
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .contact-cta p {
+      max-width: 700px;
+      color: var(--text);
+      margin: 0 auto 28px;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 27px;
+      color: #07152f;
+      background: var(--cyan);
+      border: 2px solid var(--cyan);
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+    }
+
+    .contact-button:hover {
+      background: transparent;
+      color: var(--cyan);
+      transform: translateY(-3px);
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 28px 7%;
+      background: #050f23;
+      border-top: 1px solid rgba(0, 234, 255, 0.14);
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer span {
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
+    /* Responsive layout */
+
+    @media (max-width: 1100px) {
+      .navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .logo {
+        font-size: 23px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 800px) {
+      .breadcrumb {
+        padding: 14px 5%;
+        gap: 9px;
+        font-size: 12px;
+      }
+
+      .navbar {
+        min-height: 80px;
+        padding: 17px 5%;
+        flex-wrap: wrap;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        padding: 15px 0 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        width: 100%;
+        padding: 11px 0;
+        font-size: 14px;
+      }
+
+      .projects-hero {
+        min-height: 390px;
+        padding: 55px 6%;
+      }
+
+      .projects-section,
+      .skills-section,
+      .contact-cta {
+        padding: 65px 5%;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .logo {
+        font-size: 21px;
+      }
+
+      .projects-hero {
+        padding: 45px 20px 55px;
+      }
+
+      .hero-icon {
+        font-size: 48px;
+      }
+
+      .projects-hero h1 {
+        margin-bottom: 22px;
+      }
+
+      .projects-hero h2 {
+        margin-bottom: 17px;
+      }
+
+      .projects-hero p {
+        font-size: 14px;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .project-card {
+        min-height: auto;
+        padding: 25px;
+      }
+
+      .section-heading {
+        margin-bottom: 32px;
+      }
+
+      .section-heading p {
+        font-size: 14px;
+      }
+
+      .skills-grid {
+        gap: 12px;
+      }
+
+      .skill-item {
+        padding: 18px 10px;
+      }
+
+      .skill-item h3 {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Breadcrumb navigation -->
+  <div class="breadcrumb-wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator">›</span>
+
+      <a href="about.html">About</a>
+      <span class="separator">›</span>
+
+      <a href="on-page-seo.html">On-Page SEO</a>
+      <span class="separator">›</span>
+
+      <a href="skills.html">Skills</a>
+      <span class="separator">›</span>
+
+      <a href="seo-vocab.html">SEO Vocabulary</a>
+      <span class="separator">›</span>
+
+      <span class="current" aria-current="page">Projects</span>
+    </nav>
+  </div>
+
+  <!-- Main header -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Anjali DigitalScope</a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="on-page-seo.html">On-Page SEO</a>
+        <a href="skills.html">Skills</a>
+        <a href="seo-vocab.html">SEO Vocabulary</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero section -->
+    <section class="projects-hero">
+      <div class="hero-icon" aria-hidden="true">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+
+      <h1>My SEO Projects</h1>
+
+      <h2>Practical SEO Work &amp; Projects</h2>
+
+      <p>
+        Welcome to the Anjali DigitalScope Projects section. Explore
+        practical SEO work covering on-page optimization, keyword research,
+        content improvement, website analysis and other important
+        digital marketing concepts.
+      </p>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects-section" id="featured-projects">
+      <div class="section-heading">
+        <h2>Featured SEO Projects</h2>
+        <p>
+          Explore my SEO learning projects and practical work in
+          search engine optimization and digital marketing.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 01</div>
+
+          <h3>On-Page SEO Optimization</h3>
+
+          <p>
+            Learn how page titles, meta descriptions, heading structure,
+            URLs and internal links help organize website pages for
+            search engines and visitors.
+          </p>
+
+          <div class="project-tags">
+            <span>On-Page SEO</span>
+            <span>Meta Tags</span>
+            <span>Headings</span>
+          </div>
+
+          <a href="on-page-seo.html" class="project-link">
+            Explore SEO Skills <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 02</div>
+
+          <h3>Keyword Research</h3>
+
+          <p>
+            Understand how to discover relevant keywords, identify
+            search intent and organize keyword ideas for useful,
+            audience-focused website content.
+          </p>
+
+          <div class="project-tags">
+            <span>Keywords</span>
+            <span>Search Intent</span>
+            <span>SEO Research</span>
+          </div>
+
+          <a href="skills.html" class="project-link">
+            Explore My Skills <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 03</div>
+
+          <h3>SEO Content Optimization</h3>
+
+          <p>
+            Explore ways to improve content structure, readability,
+            heading organization and keyword relevance while keeping
+            information useful for readers.
+          </p>
+
+          <div class="project-tags">
+            <span>Content SEO</span>
+            <span>Readability</span>
+            <span>Optimization</span>
+          </div>
+
+          <a href="blog.html" class="project-link">
+            Read SEO Blog <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 04</div>
+
+          <h3>Website SEO Analysis</h3>
+
+          <p>
+            Review important website elements such as page structure,
+            metadata, crawlability and common technical issues to
+            identify potential SEO improvements.
+          </p>
+
+          <div class="project-tags">
+            <span>SEO Audit</span>
+            <span>Website Analysis</span>
+            <span>Technical SEO</span>
+          </div>
+
+          <a href="on-page-seo.html" class="project-link">
+            Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-link" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 05</div>
+
+          <h3>Internal Linking Strategy</h3>
+
+          <p>
+            Understand how relevant internal links connect related
+            pages, support navigation and help visitors discover
+            more useful information on a website.
+          </p>
+
+          <div class="project-tags">
+            <span>Internal Links</span>
+            <span>Navigation</span>
+            <span>Site Structure</span>
+          </div>
+
+          <a href="skills.html" class="project-link">
+            View Related Skills <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          </div>
+
+          <div class="project-number">PROJECT 06</div>
+
+          <h3>SEO Vocabulary Guide</h3>
+
+          <p>
+            Build an understanding of essential SEO terminology,
+            including organic traffic, indexing, backlinks, rankings
+            and other common search engine optimization terms.
+          </p>
+
+          <div class="project-tags">
+            <span>SEO Basics</span>
+            <span>SEO Terms</span>
+            <span>Learning</span>
+          </div>
+
+          <a href="seo-vocab.html" class="project-link">
+            Explore SEO Vocabulary <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEO skills section -->
+    <section class="skills-section">
+      <div class="section-heading">
+        <h2>SEO Areas I Explore</h2>
+        <p>
+          These are some of the important SEO topics covered in my
+          learning and digital marketing practice.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <h3>Keyword Research</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+          <h3>On-Page SEO</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+          <h3>Content Optimization</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-link" aria-hidden="true"></i>
+          <h3>Internal Linking</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+          <h3>SEO Analysis</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <h3>Mobile-Friendly Design</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <h3>Technical SEO Basics</h3>
+        </div>
+
+        <div class="skill-item">
+          <i class="fa-solid fa-book" aria-hidden="true"></i>
+          <h3>SEO Vocabulary</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-cta">
+      <h2>Let's Connect</h2>
+
+      <p>
+        Interested in learning more about my SEO projects and digital
+        marketing skills? Visit my contact page to connect with me.
+      </p>
+
+      <a href="contact.html" class="contact-button">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        Contact Me
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; <span id="currentYear">2026</span>
+      <span>Anjali DigitalScope</span>. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Mobile navigation and current year -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+      const icon = menuToggle.querySelector("i");
+
+      icon.classList.toggle("fa-bars", !isOpen);
+      icon.classList.toggle("fa-xmark", isOpen);
+    });
+
+    document.querySelectorAll("#navLinks a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        const icon = menuToggle.querySelector("i");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-xmark");
+      });
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+```
